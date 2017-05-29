@@ -1,5 +1,6 @@
 package View;
 
+import Controller.User_controller;
 import Model.Langue;
 
 import javax.swing.*;
@@ -105,7 +106,13 @@ public class form_create_user extends JFrame {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        dispose();
+                        User_controller user_c = new User_controller();
+                        if(user_c.CreateUser(tf_nom.toString(),tf_prenom.toString(),tf_id.toString(),pf_mdp.toString(),Integer.parseInt(tf_age.toString()),tf_genre.toString(),cb_langue.getSelectedItem().toString()))
+                        {
+                            dispose();
+                            menu_profil profil = new menu_profil();
+                        }
+
 
                     }
                 }
