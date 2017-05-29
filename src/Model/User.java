@@ -9,86 +9,14 @@ public class User {
     private String id;
     private String mdp;
     private int age;
-    private Genre genre;
-    private Langue langue;
+    private String genre;
+    private String langue;
 
     /**
-     * Constructeur de la classe, permettant de créer un utilisateur en demandant à l'utilisateur de saisir des informations personnelles
+     * Constructeur de la classe, permettant de créer un utilisateur
      */
     public User() {
-        Scanner sc;
-        Boolean ok;
-        do {
-            System.out.println("\nVeuillez saisir votre age : ");
-            try{
-                sc = new Scanner(System.in);
-                String test=sc.nextLine();
-                age=Integer.parseInt(test);
-                if(age<=0 || age >150) {
-                    ok = false;
-                } else {
-                    ok = true;
-                }
-            }catch(Error e)
-            {
-                System.out.println("Erreur");
-                ok=false;
-            }
 
-        } while(!ok);
-
-        String saisie_genre;
-        do {
-            System.out.println("\nEtes-vous une femme ou un homme ?  (F/H)");
-            sc = new Scanner(System.in);
-            saisie_genre = sc.nextLine();
-            if(!saisie_genre.equals("H") && !saisie_genre.equals("F")) {
-                ok = false;
-            } else {
-                ok = true;
-            }
-        } while(!ok);
-
-        if(saisie_genre.equals("H")) {
-            genre = Genre.HOMME;
-        } else {
-            genre = Genre.FEMME;
-        }
-
-        ok=false;
-        do {
-            System.out.println("\nChoisissez une langue à apprendre parmi la liste : ");
-            for(Langue lang : Langue.values()){
-                System.out.println(lang);
-            }
-
-            System.out.println("\r");
-            sc = new Scanner(System.in);
-            String saisie_langue = sc.nextLine();
-
-            switch(saisie_langue) {
-                case "Anglais":
-                    langue=Langue.Anglais;
-                    ok=true;
-                    break;
-                case "Espagnol":
-                    langue=Langue.Espagnol;
-                    ok=true;
-                    break;
-                case "Italien":
-                    langue=Langue.Italien;
-                    ok=true;
-                    break;
-                case "Allemand":
-                    langue=Langue.Allemand;
-                    ok=true;
-                    break;
-                default:
-                    langue=Langue.Anglais;
-
-                    break;
-            }
-        } while(!ok);
     }
 
     public String getNom()
@@ -154,7 +82,7 @@ public class User {
      * Méthode retournant le Genre (Homme/Femme) d'un utilisateur
      * @return
      */
-    public Genre getGenre() {
+    public String getGenre() {
         return genre;
     }
 
@@ -163,42 +91,22 @@ public class User {
      * @param genre
      */
     public void setGenre(String genre) {
-        Genre conversion=null;
-        for(Genre GENRE : Genre.values()){
-            if(genre==GENRE.toString())
-            {
-                conversion=GENRE;
-            }
-        }
-        if(conversion!=null)
-        {
-            this.genre = conversion;
-        }
+        this.genre = genre;
     }
 
     /**
      * Méthode retournant la langue à apprendre d'un utilisateur
      * @return
      */
-    public Langue getLangue() {
+    public String getLangue() {
         return langue;
     }
 
     /**
      * Méthode modifiant la langue à apprendre pour un utilisateur
-     * @param langue
+     * @param Langue
      */
-    public void setLangue(String langue) {
-        Langue conversion=null;
-        for(Langue lang : Langue.values()){
-            if(langue==lang.toString())
-            {
-                conversion=lang;
-            }
-        }
-        if(conversion!=null)
-        {
-            this.langue = conversion;
-        }
+    public void setLangue(String Langue) {
+        this.langue = Langue;
     }
 }
