@@ -4,6 +4,10 @@ package Model; /**
 import java.util.Scanner;
 
 public class User {
+    private String nom;
+    private String prenom;
+    private String id;
+    private String mdp;
     private int age;
     private Genre genre;
     private Langue langue;
@@ -87,6 +91,47 @@ public class User {
         } while(!ok);
     }
 
+    public String getNom()
+    {
+        return nom;
+    }
+
+    public void setNom(String Nom)
+    {
+        nom=Nom;
+    }
+
+    public String getPrenom()
+    {
+        return prenom;
+    }
+
+    public void setPrenom(String Prenom)
+    {
+        prenom=Prenom;
+    }
+
+    public String getID()
+    {
+        return id;
+    }
+
+    public void setID(String ID)
+    {
+        id=ID;
+    }
+
+    public String getMdp()
+    {
+        return mdp;
+    }
+
+    public void setMdp(String Mdp)
+    {
+        mdp=Mdp;
+    }
+
+
     /**
      * Méthode retournant l'age d'un utilisateur
      * Possiblement nécessaire pour des améliorations du système
@@ -117,8 +162,18 @@ public class User {
      * Méthode modifiant le genre d'un utilisateur avec celui placé en paramètre
      * @param genre
      */
-    public void setGenre(Genre genre) {
-        this.genre = genre;
+    public void setGenre(String genre) {
+        Genre conversion=null;
+        for(Genre GENRE : Genre.values()){
+            if(genre==GENRE.toString())
+            {
+                conversion=GENRE;
+            }
+        }
+        if(conversion!=null)
+        {
+            this.genre = conversion;
+        }
     }
 
     /**
@@ -133,7 +188,17 @@ public class User {
      * Méthode modifiant la langue à apprendre pour un utilisateur
      * @param langue
      */
-    public void setLangue(Langue langue) {
-        this.langue = langue;
+    public void setLangue(String langue) {
+        Langue conversion=null;
+        for(Langue lang : Langue.values()){
+            if(langue==lang.toString())
+            {
+                conversion=lang;
+            }
+        }
+        if(conversion!=null)
+        {
+            this.langue = conversion;
+        }
     }
 }
