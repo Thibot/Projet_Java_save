@@ -4,7 +4,12 @@ import Model.User;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
+import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.*;
+
+import static javax.swing.JOptionPane.showConfirmDialog;
 
 /**
  * Created by thibaut on 30/05/17.
@@ -14,6 +19,7 @@ public class Connexion extends JFrame {
     protected Dimension d = kit.getScreenSize();
     public Connexion(ArrayList<User> liste_utilisateur)
     {
+        JLabel lb_titre = new JLabel("Se connecter");
         JLabel lb_id = new JLabel("Identifiant : ");
         JTextField tf_id = new JTextField("",10);
         JLabel lb_mdp = new JLabel("Mot de passe : ");
@@ -22,8 +28,56 @@ public class Connexion extends JFrame {
         GridBagConstraints gbc = new GridBagConstraints();
         setLayout(new GridBagLayout());
 
-        
+        gbc.gridx=0;
+        gbc.gridy=0;
+        gbc.gridwidth=GridBagConstraints.REMAINDER;
+        gbc.insets = new Insets(10, 15, 5, 15);
+        getContentPane().add(lb_titre,gbc);
+        gbc.gridx=0;
+        gbc.gridy=1;
+        gbc.gridwidth=1;
+        gbc.insets = new Insets(10, 15, 5, 5);
+        getContentPane().add(lb_id,gbc);
+        gbc.gridx=0;
+        gbc.gridy=2;
+        gbc.insets = new Insets(5, 15, 10, 5);
+        getContentPane().add(lb_mdp,gbc);
+        gbc.gridx=0;
+        gbc.gridy=3;
+        gbc.gridwidth=GridBagConstraints.REMAINDER;
+        gbc.insets = new Insets(5, 15, 5, 15);
+        getContentPane().add(btn_connexion,gbc);
 
+
+        gbc.gridx=1;
+        gbc.gridy=1;
+        gbc.gridwidth=GridBagConstraints.REMAINDER;
+        gbc.insets = new Insets(10, 5, 5, 15);
+        getContentPane().add(tf_id,gbc);
+        gbc.gridx=1;
+        gbc.gridy=2;
+        gbc.insets = new Insets(5, 5, 10, 15);
+        getContentPane().add(pf_mdp,gbc);
+
+
+
+        btn_connexion.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (isRoot(tf_id.getText(), pf_mdp.getText())) {
+
+                        } else if (id_mdp_isValid(tf_id.getText(), pf_mdp.getText(), liste_utilisateur)) {
+                            //Connexion donc passage à la fenêtre suivante
+                            JOptionPane.showMessageDialog(null, "Bienvenue "+tf_id);
+
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Inconnu" + pf_mdp.getText());
+                        }
+
+                    }
+                }
+        );
 
 
         setTitle ("Se connecter") ;
@@ -33,5 +87,31 @@ public class Connexion extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
         setVisible (true);
+    }
+
+    public Boolean id_mdp_isValid(String id, String mdp, ArrayList<User> liste_utilisateur)
+    {
+        Boolean ok=false;
+
+        int i=0;
+        for(i=0;i<liste_utilisateur.size();i++)
+        {
+            if(liste_utilisateur.get(i).getID()==id && liste_utilisateur.get(i).getMdp().equals(mdp))
+            {
+                ok=true;
+            }
+        }
+        return ok;
+    }
+
+    public Boolean isRoot(String id, String mdp)
+    {
+        if(id.compareTo("root")==0 && mdp.compareTo("1234")==0)
+        {
+            return true;
+        }else
+        {
+            return false;
+        }
     }
 }
