@@ -86,4 +86,9 @@ public class User_controller {
         }
         return ok;
     }
+
+    public User getUser()
+    {
+        return user;
+    }
 }

@@ -1,9 +1,12 @@
 package View;
 
+import Model.User;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.*;
 
 /**
  * Created by thibaut on 29/05/17.
@@ -11,10 +14,13 @@ import java.awt.event.ActionListener;
 public class menu_profil extends JFrame {
     protected Toolkit kit = Toolkit . getDefaultToolkit ();
     protected Dimension d = kit.getScreenSize();
-    public menu_profil()
+    public ArrayList<User> list_user;
+    public menu_profil(ArrayList<User> liste_utilisateur)
     {
+        list_user=liste_utilisateur;
+
         JLabel lb_titre = new JLabel("Apprentissage des langues");
-        JButton btn_connexion = new JButton("Connexion");
+        JButton btn_connexion = new JButton("Se connecter");
         JButton btn_create = new JButton("Créer un compte");
         JButton btn_anonyme=new JButton("Anonyme");
         GridBagConstraints gbc = new GridBagConstraints();
@@ -41,7 +47,9 @@ public class menu_profil extends JFrame {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        //Penser à transmettre ma liste d'utilisateurs
+                        dispose();
+                        Connexion ihm_connexion = new Connexion(liste_utilisateur);
                     }
                 }
         );
@@ -50,7 +58,7 @@ public class menu_profil extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         dispose();
-                        form_create_user create = new form_create_user();
+                        form_create_user create = new form_create_user(liste_utilisateur);
                     }
                 }
         );

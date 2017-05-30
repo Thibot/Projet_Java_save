@@ -2,11 +2,13 @@ package View;
 
 import Controller.User_controller;
 import Model.Langue;
+import Model.User;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 /**
  * Created by thibaut on 29/05/17.
@@ -14,7 +16,8 @@ import java.awt.event.ActionListener;
 public class form_create_user extends JFrame {
     protected Toolkit kit = Toolkit . getDefaultToolkit ();
     protected Dimension d = kit.getScreenSize();
-    public form_create_user()
+
+    public form_create_user(ArrayList<User> liste_utilisateur)
     {
         JLabel lb_nom = new JLabel("Nom : ");
         JLabel lb_prenom = new JLabel("Prénom : ");
@@ -98,7 +101,7 @@ public class form_create_user extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         dispose();
-                        menu_profil f = new menu_profil();
+                        menu_profil f = new menu_profil(liste_utilisateur);
                     }
                 }
         );
@@ -109,11 +112,10 @@ public class form_create_user extends JFrame {
                         User_controller user_c = new User_controller();
                         if(user_c.CreateUser(tf_nom.toString(),tf_prenom.toString(),tf_id.toString(),pf_mdp.toString(),Integer.parseInt(tf_age.toString()),tf_genre.toString(),cb_langue.getSelectedItem().toString()))
                         {
+                            liste_utilisateur.add(user_c.getUser());
                             dispose();
-                            menu_profil profil = new menu_profil();
+                            menu_profil profil = new menu_profil(liste_utilisateur);
                         }
-
-
                     }
                 }
         );
