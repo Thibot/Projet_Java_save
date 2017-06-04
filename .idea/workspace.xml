@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d836e0e-c1f5-4a46-bae8-3fe06ffd4699" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Model/Type_session.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/Model/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Main.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/Controller/User_controller.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/Controller/User_controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/Main.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/Model/User.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/Model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user$1.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user$2.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$1.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$2.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$3.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/Session_connexion_controller.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Helper/CSVHelpher.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/Model/Session_connexion.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/Model/Session_connexion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion$1.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Session_connexion.java" afterPath="$PROJECT_DIR$/src/Model/Session_connexion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Connexion.java" afterPath="$PROJECT_DIR$/src/View/Connexion.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +27,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="198">
               <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,11 +39,9 @@
       <file leaf-file-name="form_create_user.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
+            <state relative-caret-position="1962">
               <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,9 +49,11 @@
       <file leaf-file-name="menu_profil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,33 +61,37 @@
       <file leaf-file-name="Session_connexion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Session_connexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="187">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Genre.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Genre.java">
+      <file leaf-file-name="Type_session.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Type_session.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="144">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Connexion.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Connexion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Connexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="134">
+              <caret line="79" column="10" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="79" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,10 +103,36 @@
         <entry file="file://$PROJECT_DIR$/src/Model/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding>
-                <element signature="e#1997#1998#0" expanded="true" />
-                <element signature="e#2033#2034#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="false" />
+                <element signature="e#448#449#0" expanded="false" />
+                <element signature="e#490#491#0" expanded="false" />
+                <element signature="e#513#514#0" expanded="false" />
+                <element signature="e#550#551#0" expanded="false" />
+                <element signature="e#579#580#0" expanded="false" />
+                <element signature="e#627#628#0" expanded="false" />
+                <element signature="e#656#657#0" expanded="false" />
+                <element signature="e#689#690#0" expanded="false" />
+                <element signature="e#714#715#0" expanded="false" />
+                <element signature="e#754#755#0" expanded="false" />
+                <element signature="e#775#776#0" expanded="false" />
+                <element signature="e#809#810#0" expanded="false" />
+                <element signature="e#835#836#0" expanded="false" />
+                <element signature="e#877#878#0" expanded="false" />
+                <element signature="e#900#901#0" expanded="false" />
+                <element signature="e#1073#1074#0" expanded="false" />
+                <element signature="e#1099#1100#0" expanded="false" />
+                <element signature="e#1311#1312#0" expanded="false" />
+                <element signature="e#1341#1342#0" expanded="false" />
+                <element signature="e#1470#1471#0" expanded="false" />
+                <element signature="e#1498#1499#0" expanded="false" />
+                <element signature="e#1657#1658#0" expanded="false" />
+                <element signature="e#1691#1692#0" expanded="false" />
+                <element signature="e#1820#1821#0" expanded="false" />
+                <element signature="e#1849#1850#0" expanded="false" />
+                <element signature="e#1997#1998#0" expanded="false" />
+                <element signature="e#2033#2034#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -120,10 +141,10 @@
       <file leaf-file-name="User_controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/User_controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
+            <state relative-caret-position="378">
               <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#CreateUser#0;class#User_controller#0" expanded="false" />
                 <element signature="method#LangueExist#0;class#User_controller#0" expanded="false" />
                 <element signature="method#GenreExist#0;class#User_controller#0" expanded="false" />
                 <element signature="e#1945#1946#0" expanded="true" />
@@ -133,12 +154,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CSVHelpher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Helper/CSVHelpher.java">
+      <file leaf-file-name="Session_connexion_controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Session_connexion_controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="432">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,8 +173,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -172,8 +197,9 @@
         <option value="$PROJECT_DIR$/src/View/menu_profil.java" />
         <option value="$PROJECT_DIR$/src/Model/User.java" />
         <option value="$PROJECT_DIR$/src/Model/Type_session.java" />
-        <option value="$PROJECT_DIR$/src/Model/Session_connexion.java" />
         <option value="$PROJECT_DIR$/src/View/Connexion.java" />
+        <option value="$PROJECT_DIR$/src/Model/Session_connexion.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Session_connexion_controller.java" />
       </list>
     </option>
   </component>
@@ -204,9 +230,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,30 +308,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_Java_save" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_Java_save" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -725,12 +733,14 @@
       <option name="presentableId" value="Default" />
       <updated>1496062547605</updated>
       <workItem from="1496062551372" duration="5875000" />
-      <workItem from="1496132825176" duration="5060000" />
+      <workItem from="1496132825176" duration="5081000" />
+      <workItem from="1496405407469" duration="125000" />
+      <workItem from="1496574164177" duration="662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10935000" />
+    <option name="totallyTimeSpent" value="13519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -784,6 +794,150 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Controller/User_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+          <folding>
+            <element signature="method#CreateUser#0;class#User_controller#0" expanded="false" />
+            <element signature="method#LangueExist#0;class#User_controller#0" expanded="false" />
+            <element signature="method#GenreExist#0;class#User_controller#0" expanded="false" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Helper/CSVHelpher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Session_connexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Connexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#689#690#0" expanded="false" />
+            <element signature="e#714#715#0" expanded="false" />
+            <element signature="e#754#755#0" expanded="false" />
+            <element signature="e#775#776#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#1073#1074#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1311#1312#0" expanded="false" />
+            <element signature="e#1341#1342#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1498#1499#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="false" />
+            <element signature="e#1820#1821#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1997#1998#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/User_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+          <folding>
+            <element signature="method#CreateUser#0;class#User_controller#0" expanded="false" />
+            <element signature="method#LangueExist#0;class#User_controller#0" expanded="false" />
+            <element signature="method#GenreExist#0;class#User_controller#0" expanded="false" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Helper/CSVHelpher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -798,9 +952,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2016">
           <caret line="112" column="67" lean-forward="false" selection-start-line="112" selection-start-column="67" selection-end-line="112" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -809,7 +961,7 @@
         <state relative-caret-position="396">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#CreateUser#0;class#User_controller#0" expanded="false" />
             <element signature="method#LangueExist#0;class#User_controller#0" expanded="false" />
             <element signature="method#GenreExist#0;class#User_controller#0" expanded="false" />
             <element signature="e#1945#1946#0" expanded="true" />
@@ -831,8 +983,34 @@
         <state relative-caret-position="1332">
           <caret line="109" column="29" lean-forward="false" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
           <folding>
-            <element signature="e#1997#1998#0" expanded="true" />
-            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#689#690#0" expanded="false" />
+            <element signature="e#714#715#0" expanded="false" />
+            <element signature="e#754#755#0" expanded="false" />
+            <element signature="e#775#776#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#1073#1074#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1311#1312#0" expanded="false" />
+            <element signature="e#1341#1342#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1498#1499#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="false" />
+            <element signature="e#1820#1821#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1997#1998#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,17 +1023,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/List_User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/List_User.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="198">
           <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -863,28 +1034,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="137" column="68" lean-forward="false" selection-start-line="137" selection-start-column="68" selection-end-line="137" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/User_controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
+        <state relative-caret-position="900">
           <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#CreateUser#0;class#User_controller#0" expanded="false" />
             <element signature="method#LangueExist#0;class#User_controller#0" expanded="false" />
             <element signature="method#GenreExist#0;class#User_controller#0" expanded="false" />
             <element signature="e#1945#1946#0" expanded="true" />
@@ -895,21 +1061,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
+        <state relative-caret-position="1962">
           <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding>
-            <element signature="e#1997#1998#0" expanded="true" />
-            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#689#690#0" expanded="false" />
+            <element signature="e#714#715#0" expanded="false" />
+            <element signature="e#754#755#0" expanded="false" />
+            <element signature="e#775#776#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#1073#1074#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1311#1312#0" expanded="false" />
+            <element signature="e#1341#1342#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1498#1499#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="false" />
+            <element signature="e#1820#1821#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1997#1998#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -932,13 +1122,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Session_connexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
+        <state relative-caret-position="486">
           <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -946,9 +1140,283 @@
     <entry file="file://$PROJECT_DIR$/src/View/Connexion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Session_connexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="112" column="67" lean-forward="false" selection-start-line="112" selection-start-column="67" selection-end-line="112" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/User_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="method#CreateUser#0;class#User_controller#0" expanded="false" />
+            <element signature="method#LangueExist#0;class#User_controller#0" expanded="false" />
+            <element signature="method#GenreExist#0;class#User_controller#0" expanded="false" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Helper/CSVHelpher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="109" column="29" lean-forward="false" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
+          <folding>
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#689#690#0" expanded="false" />
+            <element signature="e#714#715#0" expanded="false" />
+            <element signature="e#754#755#0" expanded="false" />
+            <element signature="e#775#776#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#1073#1074#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1311#1312#0" expanded="false" />
+            <element signature="e#1341#1342#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1498#1499#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="false" />
+            <element signature="e#1820#1821#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1997#1998#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/List_User.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1962">
+          <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+            <element signature="e#579#580#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#689#690#0" expanded="false" />
+            <element signature="e#714#715#0" expanded="false" />
+            <element signature="e#754#755#0" expanded="false" />
+            <element signature="e#775#776#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#1073#1074#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1311#1312#0" expanded="false" />
+            <element signature="e#1341#1342#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1498#1499#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="false" />
+            <element signature="e#1820#1821#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1997#1998#0" expanded="false" />
+            <element signature="e#2033#2034#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Connexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="79" column="10" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="79" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Type_session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Session_connexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Helper/CSVHelpher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/User_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+          <folding>
+            <element signature="method#CreateUser#0;class#User_controller#0" expanded="false" />
+            <element signature="method#LangueExist#0;class#User_controller#0" expanded="false" />
+            <element signature="method#GenreExist#0;class#User_controller#0" expanded="false" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Session_connexion_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
           </folding>
         </state>
       </provider>

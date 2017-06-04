@@ -7,20 +7,25 @@ public class Session_connexion {
 
     private Type_session type;
     private String id;
-    private String mdp;
 
-    public Session_connexion(String ID,String MDP,Type_session TYPE)
+    public Session_connexion()
     {
-        id=ID;
-        mdp=MDP;
+
+    }
+
+    public Type_session getType()
+    {
+        return type;
+    }
+
+    public void setType(Type_session TYPE)
+    {
         type=TYPE;
     }
 
-    public Session_connexion(Type_session TYPE)
+    public void setId(String ID)
     {
-        id=null;
-        mdp=null;
-        type=TYPE;
+        id=ID;
     }
 
     public String getId()
@@ -28,8 +33,4 @@ public class Session_connexion {
         return id;
     }
 
-    public Type_session getType()
-    {
-        return type;
-    }
 }
