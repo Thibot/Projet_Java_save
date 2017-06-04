@@ -2,9 +2,15 @@ package View;
 
 
 import Controller.Session_connexion_controller;
+import Model.Conjugaison;
+import Model.Langue;
+import Model.Lecon;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * Created by thibaut on 04/06/17.
@@ -15,9 +21,38 @@ public class Mode_anonym_view extends Mode_view_abstract{
     private JButton btn_lecons = new JButton("Leçons");
     private JButton btn_quitter = new JButton("Quitter");
     private JLabel lb_titre = new JLabel("Accueil",JLabel.CENTER);
+    private JComboBox cb_langue = new JComboBox();
 
-    public Mode_anonym_view()
+
+    public Mode_anonym_view(String langue)
     {
+
+        btn_accueil.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                    }
+                }
+        );
+
+        btn_lecons.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                    }
+                }
+        );
+
+        btn_quitter.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        System.exit(0);
+                    }
+                }
+        );
         getContentPane().setLayout(new BoxLayout(getContentPane(),BoxLayout.X_AXIS));
 
 
@@ -46,10 +81,12 @@ public class Mode_anonym_view extends Mode_view_abstract{
 
     protected void Init_pn_contenu()
     {
+        JLabel histo = new JLabel("Merci de créer un compte pour obtenir un historique",JLabel.CENTER);
         getContentPane().add(pn_contenu);
         pn_contenu.setLayout(new BorderLayout());
         pn_contenu.add(lb_titre,BorderLayout.NORTH);
         lb_titre.setFont(new Font("TimesNewRoman",Font.BOLD,24));
+        pn_contenu.add(histo, BorderLayout.CENTER);
     }
 
 

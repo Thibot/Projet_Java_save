@@ -1,5 +1,6 @@
 package View;
 
+import Controller.Session_connexion_controller;
 import Controller.User_controller;
 import Model.Langue;
 import Model.User;
@@ -108,7 +109,9 @@ public class form_create_user extends JFrame {
                         {
                             liste_utilisateur.add(user_c.getUser());
                             dispose();
-                            menu_profil profil = new menu_profil(liste_utilisateur);
+                            Session_connexion_controller session_controller = new Session_connexion_controller();
+                            session_controller.setSession("CONFIRMED",tf_id.getText());
+                            Mode_view_abstract next_view = new Mode_confirmed_view(session_controller);
                         }
                     }
                 }

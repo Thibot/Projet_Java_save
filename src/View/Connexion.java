@@ -19,7 +19,7 @@ import static javax.swing.JOptionPane.showConfirmDialog;
 public class Connexion extends JFrame {
     protected Toolkit kit = Toolkit . getDefaultToolkit ();
     protected Dimension d = kit.getScreenSize();
-    public Connexion(ArrayList<User> liste_utilisateur, Session_connexion session)
+    public Connexion(ArrayList<User> liste_utilisateur, Session_connexion_controller session_controller)
     {
         JLabel lb_titre = new JLabel("Se connecter");
         JLabel lb_id = new JLabel("Identifiant : ");
@@ -72,12 +72,11 @@ public class Connexion extends JFrame {
                         } else if (id_mdp_isValid(tf_id.getText(), pf_mdp.getText(), liste_utilisateur)) {
                             //Connexion donc passage à la fenêtre suivante
                             JOptionPane.showMessageDialog(null, "Bienvenue "+tf_id.getText(),"Accès autorisé",JOptionPane.INFORMATION_MESSAGE);
-                            Session_connexion_controller session_controller = new Session_connexion_controller(session);
+                            Session_connexion_controller session_controller = new Session_connexion_controller();
                             session_controller.setSession("CONFIRMED",tf_id.getText());
                             //Transmettre le controleur de session a la fenetre suivante
                             dispose();
                             Mode_view_abstract next_view = new Mode_confirmed_view(session_controller);
-
 
                         } else {
                             JOptionPane.showMessageDialog(null, "Aucun utilisateur avec ces identifiants","Erreur authentification",JOptionPane.ERROR_MESSAGE);

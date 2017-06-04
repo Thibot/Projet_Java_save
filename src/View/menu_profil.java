@@ -19,7 +19,7 @@ public class menu_profil extends JFrame {
 
     public menu_profil(ArrayList<User> liste_utilisateur)
     {
-        Session_connexion session = new Session_connexion();
+        Session_connexion_controller session_controller = new Session_connexion_controller();
 
         JLabel lb_titre = new JLabel("Apprentissage des langues");
         JButton btn_connexion = new JButton("Se connecter");
@@ -50,7 +50,7 @@ public class menu_profil extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         dispose();
-                        Connexion ihm_connexion = new Connexion(liste_utilisateur,session);
+                        Connexion ihm_connexion = new Connexion(liste_utilisateur,session_controller);
                     }
                 }
         );
@@ -67,10 +67,8 @@ public class menu_profil extends JFrame {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        Session_connexion_controller session_controller = new Session_connexion_controller(session);
-                        session_controller.setSession("ANONYM",null);
                         dispose();
-                        Mode_view_abstract Anonym_view = new Mode_anonym_view();
+                        Anonym_langue anonyme_step1 = new Anonym_langue();
                     }
                 }
         );
