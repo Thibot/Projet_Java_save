@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d836e0e-c1f5-4a46-bae8-3fe06ffd4699" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Conjugaison.java" afterPath="$PROJECT_DIR$/src/Model/Conjugaison.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Exercice.java" afterPath="$PROJECT_DIR$/src/Model/Exercice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Grammaire.java" afterPath="$PROJECT_DIR$/src/Model/Grammaire.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Lecon.java" afterPath="$PROJECT_DIR$/src/Model/Lecon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Orthographe.java" afterPath="$PROJECT_DIR$/src/Model/Orthographe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Vocabulaire.java" afterPath="$PROJECT_DIR$/src/Model/Vocabulaire.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Anonym_langue.java" afterPath="$PROJECT_DIR$/src/View/Anonym_langue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Mode_anonym_view.java" afterPath="$PROJECT_DIR$/src/View/Mode_anonym_view.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Mode_view_abstract.java" afterPath="$PROJECT_DIR$/src/View/Mode_view_abstract.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/Historique_Controller.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mode_anonym_view.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Mode_anonym_view.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Mode_anonym_view.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="457">
+              <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1500#1501#0" expanded="true" />
@@ -76,7 +68,31 @@
                 <element signature="e#2833#2834#0" expanded="true" />
                 <element signature="e#2895#2896#0" expanded="true" />
                 <element signature="method#Init_pn_menu#0;class#Mode_anonym_view#0" expanded="false" />
+                <element signature="method#Init_pn_contenu#0;class#Mode_anonym_view#0" expanded="false" />
+                <element signature="method#LeconBTN_Step1_Contenu#0;class#Mode_anonym_view#0" expanded="false" />
+                <element signature="method#AfficheListeExo#0;class#Mode_anonym_view#0" expanded="false" />
+                <element signature="method#AfficheExo#0;class#Mode_anonym_view#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Historique.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Historique.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180">
+              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Historique_Controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Historique_Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -677,16 +693,16 @@
       <workItem from="1496132825176" duration="5081000" />
       <workItem from="1496405407469" duration="125000" />
       <workItem from="1496574164177" duration="5552000" />
-      <workItem from="1496582426417" duration="24242000" />
+      <workItem from="1496582426417" duration="24373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42651000" />
+    <option name="totallyTimeSpent" value="42782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -703,7 +719,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -736,7 +752,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Model/List_User.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1060,22 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Historique.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1193,10 +1192,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Mode_anonym_view.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="457">
+          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1500#1501#0" expanded="true" />
@@ -1206,7 +1213,27 @@
             <element signature="e#2833#2834#0" expanded="true" />
             <element signature="e#2895#2896#0" expanded="true" />
             <element signature="method#Init_pn_menu#0;class#Mode_anonym_view#0" expanded="false" />
+            <element signature="method#Init_pn_contenu#0;class#Mode_anonym_view#0" expanded="false" />
+            <element signature="method#LeconBTN_Step1_Contenu#0;class#Mode_anonym_view#0" expanded="false" />
+            <element signature="method#AfficheListeExo#0;class#Mode_anonym_view#0" expanded="false" />
+            <element signature="method#AfficheExo#0;class#Mode_anonym_view#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Historique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Historique_Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
