@@ -71,26 +71,19 @@ public class form_create_user extends JFrame {
         gbc.insets = new Insets(20, 5, 5, 20);
         getContentPane().add(tf_nom,gbc);
         gbc.gridy=1;
-        gbc.gridwidth=GridBagConstraints.REMAINDER;
         gbc.insets = new Insets(5, 5, 5, 20);
         getContentPane().add(tf_prenom,gbc);
         gbc.gridy=2;
-        gbc.gridwidth=GridBagConstraints.REMAINDER;
         getContentPane().add(tf_id,gbc);
         gbc.gridy=3;
-        gbc.gridwidth=GridBagConstraints.REMAINDER;
         getContentPane().add(pf_mdp,gbc);
         gbc.gridy=4;
-        gbc.gridwidth=GridBagConstraints.REMAINDER;
         getContentPane().add(tf_age,gbc);
         gbc.gridy=5;
-        gbc.gridwidth=GridBagConstraints.REMAINDER;
         getContentPane().add(tf_genre,gbc);
         gbc.gridy=6;
-        gbc.gridwidth=GridBagConstraints.REMAINDER;
         getContentPane().add(cb_langue,gbc);
         gbc.gridy=7;
-        gbc.gridwidth=GridBagConstraints.REMAINDER;
         gbc.insets = new Insets(5, 5, 20, 20);
         getContentPane().add(btn_valider,gbc);
 

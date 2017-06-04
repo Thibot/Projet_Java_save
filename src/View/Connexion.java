@@ -71,14 +71,14 @@ public class Connexion extends JFrame {
 
                         } else if (id_mdp_isValid(tf_id.getText(), pf_mdp.getText(), liste_utilisateur)) {
                             //Connexion donc passage à la fenêtre suivante
-                            JOptionPane.showMessageDialog(null, "Bienvenue "+tf_id.getText());
+                            JOptionPane.showMessageDialog(null, "Bienvenue "+tf_id.getText(),"Accès autorisé",JOptionPane.INFORMATION_MESSAGE);
                             Session_connexion_controller session_controller = new Session_connexion_controller(session);
                             session_controller.setSession("CONFIRMED",tf_id.getText());
                             //Transmettre le controleur de session a la fenetre suivante
 
 
                         } else {
-                            JOptionPane.showMessageDialog(null, "Inconnu" + pf_mdp.getText());
+                            JOptionPane.showMessageDialog(null, "Aucun utilisateur avec ces identifiants","Erreur authentification",JOptionPane.ERROR_MESSAGE);
                         }
 
                     }

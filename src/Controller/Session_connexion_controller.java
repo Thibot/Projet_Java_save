@@ -25,4 +25,9 @@ public class Session_connexion_controller {
         }
         session.setType(type);
     }
+
+    public Session_connexion getSession()
+    {
+        return session;
+    }
 }

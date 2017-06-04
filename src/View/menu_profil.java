@@ -14,13 +14,12 @@ import java.util.*;
  * Created by thibaut on 29/05/17.
  */
 public class menu_profil extends JFrame {
-    protected Toolkit kit = Toolkit . getDefaultToolkit ();
-    protected Dimension d = kit.getScreenSize();
-    public ArrayList<User> list_user;
+    private Toolkit kit = Toolkit . getDefaultToolkit ();
+    private Dimension d = kit.getScreenSize();
+
     public menu_profil(ArrayList<User> liste_utilisateur)
     {
         Session_connexion session = new Session_connexion();
-        list_user=liste_utilisateur;
 
         JLabel lb_titre = new JLabel("Apprentissage des langues");
         JButton btn_connexion = new JButton("Se connecter");
@@ -32,18 +31,18 @@ public class menu_profil extends JFrame {
         gbc.gridx=0;
         gbc.gridy=0;
         gbc.gridwidth=GridBagConstraints.REMAINDER;
-        gbc.insets = new Insets(10, 15, 5, 15);
+        gbc.insets = new Insets(10, 80, 5, 80);
         getContentPane().add(lb_titre,gbc);
         gbc.gridx=0;
         gbc.gridy=1;
-        gbc.insets = new Insets(5, 15, 5, 15);
+        gbc.insets = new Insets(5, 80, 5, 80);
         getContentPane().add(btn_connexion,gbc);
         gbc.gridx=0;
         gbc.gridy=2;
         getContentPane().add(btn_create,gbc);
         gbc.gridx=0;
         gbc.gridy=3;
-        gbc.insets = new Insets(5, 15, 10, 15);
+        gbc.insets = new Insets(5, 80, 10, 80);
         getContentPane().add(btn_anonyme,gbc);
 
         btn_connexion.addActionListener(
@@ -69,7 +68,9 @@ public class menu_profil extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         Session_connexion_controller session_controller = new Session_connexion_controller(session);
-                        session_controller.setSession("CONFIRMED",null);
+                        session_controller.setSession("ANONYM",null);
+                        dispose();
+                        Mode_anonym_view Anonym_view = new Mode_anonym_view(session_controller);
                     }
                 }
         );
