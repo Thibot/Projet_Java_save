@@ -70,7 +70,7 @@ public class menu_profil extends JFrame {
                         Session_connexion_controller session_controller = new Session_connexion_controller(session);
                         session_controller.setSession("ANONYM",null);
                         dispose();
-                        Mode_anonym_view Anonym_view = new Mode_anonym_view(session_controller);
+                        Mode_view_abstract Anonym_view = new Mode_anonym_view();
                     }
                 }
         );

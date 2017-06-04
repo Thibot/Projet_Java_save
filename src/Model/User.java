@@ -11,6 +11,7 @@ public class User {
     private int age;
     private String genre;
     private String langue;
+    private Historique histo;
 
     /**
      * Constructeur de la classe, permettant de créer un utilisateur
