@@ -1,5 +1,7 @@
 package View;
 
+import Controller.Session_connexion_controller;
+import Model.Session_connexion;
 import Model.User;
 
 import javax.swing.*;
@@ -17,7 +19,7 @@ import static javax.swing.JOptionPane.showConfirmDialog;
 public class Connexion extends JFrame {
     protected Toolkit kit = Toolkit . getDefaultToolkit ();
     protected Dimension d = kit.getScreenSize();
-    public Connexion(ArrayList<User> liste_utilisateur)
+    public Connexion(ArrayList<User> liste_utilisateur, Session_connexion session)
     {
         JLabel lb_titre = new JLabel("Se connecter");
         JLabel lb_id = new JLabel("Identifiant : ");
@@ -69,7 +71,11 @@ public class Connexion extends JFrame {
 
                         } else if (id_mdp_isValid(tf_id.getText(), pf_mdp.getText(), liste_utilisateur)) {
                             //Connexion donc passage à la fenêtre suivante
-                            JOptionPane.showMessageDialog(null, "Bienvenue "+tf_id);
+                            JOptionPane.showMessageDialog(null, "Bienvenue "+tf_id.getText());
+                            Session_connexion_controller session_controller = new Session_connexion_controller(session);
+                            session_controller.setSession("CONFIRMED",tf_id.getText());
+                            //Transmettre le controleur de session a la fenetre suivante
+
 
                         } else {
                             JOptionPane.showMessageDialog(null, "Inconnu" + pf_mdp.getText());
@@ -92,11 +98,10 @@ public class Connexion extends JFrame {
     public Boolean id_mdp_isValid(String id, String mdp, ArrayList<User> liste_utilisateur)
     {
         Boolean ok=false;
-
-        int i=0;
+        int i;
         for(i=0;i<liste_utilisateur.size();i++)
         {
-            if(liste_utilisateur.get(i).getID()==id && liste_utilisateur.get(i).getMdp().equals(mdp))
+            if(liste_utilisateur.get(i).getID().equals(id) && liste_utilisateur.get(i).getMdp().equals(mdp))
             {
                 ok=true;
             }

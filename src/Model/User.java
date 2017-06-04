@@ -109,4 +109,9 @@ public class User {
     public void setLangue(String Langue) {
         this.langue = Langue;
     }
+
+    public String toString()
+    {
+        return ("Nom : "+this.getNom()+" || Prenom : "+this.getPrenom()+" || ID : "+getID()+" || Age : "+Integer.toString(this.getAge()));
+    }
 }

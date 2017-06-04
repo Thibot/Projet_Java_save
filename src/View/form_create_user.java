@@ -109,8 +109,9 @@ public class form_create_user extends JFrame {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
+
                         User_controller user_c = new User_controller();
-                        if(user_c.CreateUser(tf_nom.toString(),tf_prenom.toString(),tf_id.toString(),pf_mdp.toString(),Integer.parseInt(tf_age.toString()),tf_genre.toString(),cb_langue.getSelectedItem().toString()))
+                        if(user_c.UserExist(tf_id.getText(),liste_utilisateur) && user_c.CreateUser(tf_nom.getText(),tf_prenom.getText(),tf_id.getText(),pf_mdp.getText(),Integer.parseInt(tf_age.getText()),tf_genre.getText(),cb_langue.getSelectedItem().toString()))
                         {
                             liste_utilisateur.add(user_c.getUser());
                             dispose();

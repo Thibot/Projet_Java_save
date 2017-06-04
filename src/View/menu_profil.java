@@ -1,5 +1,7 @@
 package View;
 
+import Controller.Session_connexion_controller;
+import Model.Session_connexion;
 import Model.User;
 
 import javax.swing.*;
@@ -17,6 +19,7 @@ public class menu_profil extends JFrame {
     public ArrayList<User> list_user;
     public menu_profil(ArrayList<User> liste_utilisateur)
     {
+        Session_connexion session = new Session_connexion();
         list_user=liste_utilisateur;
 
         JLabel lb_titre = new JLabel("Apprentissage des langues");
@@ -47,9 +50,8 @@ public class menu_profil extends JFrame {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        //Penser à transmettre ma liste d'utilisateurs
                         dispose();
-                        Connexion ihm_connexion = new Connexion(liste_utilisateur);
+                        Connexion ihm_connexion = new Connexion(liste_utilisateur,session);
                     }
                 }
         );
@@ -66,7 +68,8 @@ public class menu_profil extends JFrame {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        Session_connexion_controller session_controller = new Session_connexion_controller(session);
+                        session_controller.setSession("CONFIRMED",null);
                     }
                 }
         );

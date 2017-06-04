@@ -18,7 +18,7 @@ public class User_controller {
 
     public Boolean CreateUser(String Nom,String Prenom, String ID, String Mdp, int age, String genre, String langue)
     {
-        if((age<=0 || age >150) && GenreExist(genre) && LangueExist(langue))
+        if(age>=0 && age<150 && GenreExist(genre) && LangueExist(langue))
         {
             try{
                 user.setNom(Nom);
@@ -28,7 +28,6 @@ public class User_controller {
                 user.setAge(age);
                 user.setGenre(genre);
                 user.setLangue(langue);
-
                 return true;
 
             }catch(Exception e)
@@ -46,42 +45,23 @@ public class User_controller {
     public Boolean LangueExist(String langue)
     {
         Boolean ok=false;
-        ArrayList<String> tab=new ArrayList<>();
-        int i=0;
         for(Langue lang : Langue.values()){
-            tab.add(lang.toString());
-        }
-        i=0;
-        while(ok==false && i<tab.size())
-        {
-            if(tab.get(i)==langue)
+            if(langue==lang.toString())
             {
                 ok=true;
-            }else
-            {
-                i++;
             }
         }
+
         return ok;
     }
 
     public Boolean GenreExist(String genre)
     {
         Boolean ok=false;
-        ArrayList<String> tab=new ArrayList<>();
-        int i=0;
         for(Genre genr : Genre.values()){
-            tab.add(genr.toString());
-        }
-        i=0;
-        while(ok==false && i<tab.size())
-        {
-            if(tab.get(i)==genre)
+            if(genre==genre.toString())
             {
                 ok=true;
-            }else
-            {
-                i++;
             }
         }
         return ok;
@@ -90,5 +70,19 @@ public class User_controller {
     public User getUser()
     {
         return user;
+    }
+
+    public Boolean UserExist(String ID, ArrayList<User> liste)
+    {
+        Boolean ok=true;
+        int i;
+        for(i=0;i<liste.size();i++)
+        {
+            if(liste.get(i).getID().equals(ID))
+            {
+                ok=false;
+            }
+        }
+        return ok;
     }
 }

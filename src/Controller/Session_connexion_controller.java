@@ -15,12 +15,14 @@ public class Session_connexion_controller {
         session=Session;
     }
 
-    public void setSession(Type_session TYPE, String ID)
+    public void setSession(String TYPE, String ID)
     {
-        session.setType(TYPE);
-        if(session.getType()!=Type_session.ANONYM)
+        Type_session type=Type_session.ANONYM;
+        if(TYPE.equals("CONFIRMED"))
         {
+            type=Type_session.CONFIRMED;
             session.setId(ID);
         }
+        session.setType(type);
     }
 }
