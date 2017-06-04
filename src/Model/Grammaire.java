@@ -7,7 +7,7 @@ public class Grammaire extends Lecon {
 
     private static String name = "Grammaire";
 
-    public Grammaire(Langue langue)
+    public Grammaire(String langue)
     {
         super(langue);
     }

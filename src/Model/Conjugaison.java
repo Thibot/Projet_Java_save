@@ -6,7 +6,7 @@ package Model;
 public class Conjugaison extends Lecon {
 
     private static String name = "Conjugaison";
-    public Conjugaison(Langue langue)
+    public Conjugaison(String langue)
     {
         super(langue);
     }

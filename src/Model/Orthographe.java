@@ -6,7 +6,7 @@ package Model;
 public class Orthographe extends Lecon {
 
     private static String name = "Orthographe";
-    public Orthographe(Langue langue)
+    public Orthographe(String langue)
     {
         super(langue);
     }

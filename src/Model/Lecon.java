@@ -7,14 +7,14 @@ import java.util.Vector;
  */
 public abstract class Lecon {
 
-    protected Langue langue;
+    protected String langue;
     protected Vector<Exercice> list_exercices;
 
     /**
      * Contructeur d'une classe abstraite lecon en affectant une langue à la leçon et une liste d'exercices vide, qui doit être remplie avec chaque exercice effectué
      * @param LANGUE
      */
-    public Lecon(Langue LANGUE)
+    public Lecon(String LANGUE)
     {
         langue=LANGUE;
         list_exercices = new Vector<>();
@@ -51,7 +51,7 @@ public abstract class Lecon {
      * Méthode retournant la langue de la leçon
      * @return
      */
-    public Langue getLangue()
+    public String getLangue()
     {
         return langue;
     }

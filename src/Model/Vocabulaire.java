@@ -6,7 +6,7 @@ package Model;
 public class Vocabulaire extends Lecon {
 
     private static String name = "Vocabulaire";
-    public Vocabulaire(Langue langue)
+    public Vocabulaire(String langue)
     {
         super(langue);
     }
