@@ -1,6 +1,7 @@
 package View;
 
 
+import Controller.Historique_Controller;
 import Controller.Session_connexion_controller;
 import Model.Conjugaison;
 import Model.Langue;
@@ -11,6 +12,8 @@ import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.Vector;
 
 /**
@@ -24,15 +27,20 @@ public class Mode_anonym_view extends Mode_view_abstract{
     private JLabel lb_titre = new JLabel("Accueil",JLabel.CENTER);
     private JLabel lb_contenu = new JLabel("",JLabel.CENTER);
     private JComboBox cb_lecon = new JComboBox();
-    private JPanel pn_north;
+    private JPanel pn_north=new JPanel();
     private JPanel pn_north_bis=new JPanel();
     private JPanel pn_center=new JPanel();
     private JLabel lb_exo = new JLabel();
     private Vector<Lecon> list_lecon=new Vector<>();
 
+    private Historique_Controller histo=new Historique_Controller();
+    private String Langue;
 
-    public Mode_anonym_view(Vector<Lecon> list_Lecon)
+
+    public Mode_anonym_view(Vector<Lecon> list_Lecon,String langue)
     {
+
+        Langue=langue;
         for(int i=0;i<list_Lecon.size();i++)
         {
             this.list_lecon.add(list_Lecon.get(i));
@@ -60,13 +68,16 @@ public class Mode_anonym_view extends Mode_view_abstract{
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        pn_center.removeAll();
-                        pn_north.removeAll();
-                        lb_contenu.setText("Merci de créer un compte pour obtenir un historique");
+                        //pn_center.removeAll();
+                        //pn_north.removeAll();
+                        /*lb_contenu.setText("Merci de créer un compte pour obtenir un historique");
                         pn_north.add(lb_contenu);
                         pn_center.add(pn_north,BorderLayout.NORTH);
                         pn_center.revalidate();
-                        pn_center.repaint();
+                        pn_center.repaint();*/
+                        Init_pn_contenu();
+                        /*pn_center.revalidate();
+                        pn_center.repaint();*/
                     }
                 }
         );
@@ -109,15 +120,16 @@ public class Mode_anonym_view extends Mode_view_abstract{
         pn_menu.add(btn_quitter);
     }
 
+    //Initialisation du panel central qui s'effectue à la création de l'interface
     protected void Init_pn_contenu()
     {
-        lb_contenu.setText("Merci de créer un compte pour obtenir un historique");
+        AfficheHistorique();
+
         getContentPane().add(pn_contenu);
         pn_contenu.setLayout(new BorderLayout());
         pn_contenu.add(lb_titre,BorderLayout.NORTH);
         lb_titre.setFont(new Font("TimesNewRoman",Font.BOLD,24));
         pn_center.setLayout(new BorderLayout());
-        pn_north = new JPanel();
         pn_north.add(lb_contenu);
         pn_north.setVisible(true);
         pn_north.setBorder(BorderFactory.createLineBorder(Color.white));
@@ -143,7 +155,7 @@ public class Mode_anonym_view extends Mode_view_abstract{
     {
         if(!type_lecon.equals("")) {
             pn_north_bis.removeAll();
-            JComboBox<String> cb_exo = new JComboBox<>();
+            JComboBox cb_exo = new JComboBox();
             Boolean stop = true;
             pn_north.removeAll();
 
@@ -183,9 +195,10 @@ public class Mode_anonym_view extends Mode_view_abstract{
     }
     private void AfficheExo(String type_lecon,String exo)
     {
+        int i = 0;
+        int j = 0;
         if(!type_lecon.equals("") && !exo.equals("")) {
             Boolean stop = true;
-            int i = 0;
 
             while (stop) {
                 if (list_lecon.get(i).toString().equals(type_lecon)) {
@@ -195,7 +208,7 @@ public class Mode_anonym_view extends Mode_view_abstract{
                 }
             }
             stop = true;
-            int j = 0;
+
             while (stop) {
                 if (list_lecon.get(i).getList_exercices().get(j).getNom().equals(exo)) {
                     stop = false;
@@ -208,6 +221,36 @@ public class Mode_anonym_view extends Mode_view_abstract{
             pn_center.add(lb_exo, BorderLayout.CENTER);
             pn_center.revalidate();
             pn_center.repaint();
+            histo.addExoHisto(cb_lecon.getSelectedItem().toString(),list_lecon.get(i).getList_exercices().get(j),Langue);
         }
+    }
+
+    private void AfficheHistorique()
+    {
+        pn_center.removeAll();
+        pn_north.removeAll();
+
+        if(histo.getHistorique().size()==0)
+        {
+            lb_contenu.setText("Aucun historique à afficher");
+            pn_north.add(lb_contenu);
+            pn_north.revalidate();
+            pn_north.repaint();
+            pn_center.add(pn_north,BorderLayout.NORTH);
+            pn_center.revalidate();
+            pn_center.repaint();
+
+        }else
+        {
+            histo.getHisto().AfficheHisto();
+            lb_contenu.setText(histo.getHisto().getAfficheHisto());
+            pn_north.add(lb_contenu);
+            pn_north.revalidate();
+            pn_north.repaint();
+            pn_center.add(pn_north,BorderLayout.CENTER);
+            pn_center.revalidate();
+            pn_center.repaint();
+        }
+
     }
 }

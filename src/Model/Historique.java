@@ -13,7 +13,7 @@ public class Historique {
      */
     public Historique()
     {
-        histo = new Vector<>();
+        histo = new Vector<Session>();
     }
 
     /**
@@ -26,29 +26,11 @@ public class Historique {
     }
 
     /**
-     * Méthode testant si l'historique contient déjà une session avec la date du jour, renvoie -1 si aucune session n'existe à la date du jour
-     * @param session
-     * @return
-     */
-    public int ContientSessionDate(Session session)
-    {
-        int i,res=-1;
-
-        for(i=0;i<histo.size() && res==-1;i++)
-        {
-            if(histo.get(i).getDate()==session.getDate())
-            {
-                res=i;
-            }
-        }
-        return res;
-    }
-
-    /**
      * Affichage d'un historique en appelant la méthode d'affichage de session pour chaque session contenue dans la liste
      */
-    public void AfficheHistorique()
+    public void AfficheHisto()
     {
+
         int i=0;
         while(i<histo.size())
         {
@@ -56,5 +38,18 @@ public class Historique {
             histo.get(i).AfficheSession();
             i++;
         }
+    }
+
+    public String getAfficheHisto()
+    {
+        String s="";
+        int i=0;
+        while(i<histo.size())
+        {
+            //Appel à la méthode d'affichage de la session
+            s=s+histo.get(i).getAfficheSession();
+            i++;
+        }
+        return s;
     }
 }

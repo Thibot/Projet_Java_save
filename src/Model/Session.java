@@ -7,7 +7,7 @@ import java.util.Vector;
 
 public class Session {
 
-    private Date date;
+    private String date;
     private Vector<Lecon> list_lecon;
 
     /**
@@ -15,41 +15,36 @@ public class Session {
      */
     public Session()
     {
-        date =  new java.util.Date();
         list_lecon=new Vector<Lecon>();
+    }
+
+    public Vector<Lecon> getList_Lecon()
+    {
+        return list_lecon;
     }
 
     /**
      * Méthode retournant la date de début de la session
      * @return
      */
-    public Date getDate()
+    public String getDate()
     {
         return date;
     }
 
     /**
-     * Méthode retournant la liste de leçons dans une session
-     * @return
-     */
-    private Vector<Lecon> getList_lecon()
-    {
-        return list_lecon;
-    }
-
-    /**
      * Méthode modifiant la date de début d'un session
-     * @param date
+     * @param DATE
      */
-    private void setDate(Date date) {
-        this.date = date;
+    public void setDate(String DATE) {
+        this.date = DATE;
     }
 
     /**
      * Méthode modifiant la liste de leçons par celle placée en paramètre
      * @param list_lecon
      */
-    private void setList_lecon(Vector<Lecon> list_lecon) {
+    public void setList_lecon(Vector<Lecon> list_lecon) {
         this.list_lecon = list_lecon;
     }
 
@@ -59,29 +54,37 @@ public class Session {
     public void AfficheSession()
     {
         int i=0;
-        System.out.println("Date : "+date.toString());
+        System.out.println("Date : "+date);
 
         for(i=0;i<list_lecon.size();i++)
         {
-            System.out.println(list_lecon.get(i).toString()+"\t"+list_lecon.get(i).getList_exercices().toString()+"\n");
+            for(int j=0;j<list_lecon.get(i).getList_exercices().size();j++)
+            {
+                System.out.println(list_lecon.get(i).toString()+"\t"+list_lecon.get(i).getList_exercices().get(j).getNom()+"\n");
+            }
+
         }
 
     }
 
-    /**
-     * Méthode ajoutant une leçon dans la liste de leçon
-     * @param lecon
-     */
-    public void addLecon(Lecon lecon)
+    public String getAfficheSession()
     {
-        if(list_lecon.contains(lecon))
-        {
-            list_lecon.get(list_lecon.indexOf(lecon)).addExercice(lecon.getExercice());
-        }else
-        {
-            list_lecon.add(lecon);
-        }
+        String s="<html> ";
+        int i=0;
+        s=(s+date+"<br><br>");
 
+        for(i=0;i<list_lecon.size();i++)
+        {
+            for(int j=0;j<list_lecon.get(i).getList_exercices().size();j++)
+            {
+                s=s+list_lecon.get(i).toString()+" || "+list_lecon.get(i).getList_exercices().get(j).getNom()+"<br>";
+            }
+
+        }
+        s=s+"\n\n</html>";
+        return s;
     }
+
+
 
 }

@@ -5,18 +5,9 @@ package Model;
  */
 public class Orthographe extends Lecon {
 
-    private static String name = "Orthographe";
     public Orthographe(String langue)
     {
         super(langue);
-    }
-
-    /**
-     * Méthode retournant le type de leçon, nécessaire pour l'affichage du contenu d'une session
-     * @return
-     */
-    public String toString()
-    {
-        return name;
+        name = "Orthographe";
     }
 }

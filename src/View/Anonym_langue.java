@@ -30,7 +30,7 @@ public class Anonym_langue extends JFrame {
                     public void actionPerformed(ActionEvent e) {
                         dispose();
                         generateLecon(cb_langue.getSelectedItem().toString());
-                        Mode_view_abstract anonym_view = new Mode_anonym_view(list_lecon);
+                        Mode_view_abstract anonym_view = new Mode_anonym_view(list_lecon,cb_langue.getSelectedItem().toString());
 
                     }
                 }

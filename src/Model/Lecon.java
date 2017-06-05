@@ -1,5 +1,6 @@
 package Model;
 
+import javax.swing.*;
 import java.util.Vector;
 
 /**
@@ -7,8 +8,10 @@ import java.util.Vector;
  */
 public abstract class Lecon {
 
+    protected String name;
     protected String langue;
     protected Vector<Exercice> list_exercices;
+    protected Vector<JLabel> list_jlabel;
 
     /**
      * Contructeur d'une classe abstraite lecon en affectant une langue à la leçon et une liste d'exercices vide, qui doit être remplie avec chaque exercice effectué
@@ -17,7 +20,8 @@ public abstract class Lecon {
     public Lecon(String LANGUE)
     {
         langue=LANGUE;
-        list_exercices = new Vector<>();
+        list_exercices = new Vector<Exercice>();
+        list_jlabel=new Vector<JLabel>();
     }
 
     /**
@@ -36,6 +40,7 @@ public abstract class Lecon {
     public void addExercice(Exercice exo)
     {
         list_exercices.add(exo);
+        list_jlabel.add(new JLabel(exo.getNom()));
     }
 
     /**
@@ -56,4 +61,7 @@ public abstract class Lecon {
         return langue;
     }
 
+    public String toString(){
+        return name;
+    };
 }

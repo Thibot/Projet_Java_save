@@ -10,7 +10,16 @@ public class Exercice {
 
     public Exercice(String Nom) {
         nom = Nom;
-        contenu = "Tamen se est saepe se haerebat cruentum ad germanum ad multis germanum se accitus introisset introisset ";
+        contenu = "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.<br>" +
+                " Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.<br>" +
+                " Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod <br>" +
+                "non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum <br>" +
+                "diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, <br>" +
+                "pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras <br>" +
+                "vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. <br>" +
+                "Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus <br>" +
+                "orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede <br>" +
+                "pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</html>";
     }
 
     public String getNom()
