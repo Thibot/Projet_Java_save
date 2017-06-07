@@ -10,7 +10,9 @@ public class Session_connexion_controller {
 
     Session_connexion session;
 
-    public Session_connexion_controller() {}
+    public Session_connexion_controller() {
+        session=new Session_connexion();
+    }
 
     public void setSession(String TYPE, String ID)
     {

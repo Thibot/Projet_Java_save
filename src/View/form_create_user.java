@@ -17,23 +17,24 @@ import java.util.ArrayList;
 public class form_create_user extends JFrame {
     protected Toolkit kit = Toolkit . getDefaultToolkit ();
     protected Dimension d = kit.getScreenSize();
+    private JLabel lb_nom = new JLabel("Nom : ");
+    private JLabel lb_prenom = new JLabel("Prénom : ");
+    private JLabel lb_id = new JLabel("ID : ");
+    private JLabel lb_mdp = new JLabel("Mot de passe : ");
+    private JLabel lb_age = new JLabel("Age : ");
+    private JLabel lb_genre = new JLabel("Genre (H/F) : ");
+    private JLabel lb_langue = new JLabel("Langue : ");
+    private JTextField tf_nom = new JTextField("",10);
+    private JTextField tf_prenom = new JTextField("",10);
+    private JTextField tf_id = new JTextField("",10);
+    private JPasswordField pf_mdp = new JPasswordField("",10);
+    private JTextField tf_age = new JTextField("",10);
+    private JTextField tf_genre = new JTextField("",10);
+    private JComboBox cb_langue = new JComboBox();
 
     public form_create_user(ArrayList<User> liste_utilisateur)
     {
-        JLabel lb_nom = new JLabel("Nom : ");
-        JLabel lb_prenom = new JLabel("Prénom : ");
-        JLabel lb_id = new JLabel("ID : ");
-        JLabel lb_mdp = new JLabel("Mot de passe : ");
-        JLabel lb_age = new JLabel("Age : ");
-        JLabel lb_genre = new JLabel("Genre (H/F) : ");
-        JLabel lb_langue = new JLabel("Langue : ");
-        JTextField tf_nom = new JTextField("",10);
-        JTextField tf_prenom = new JTextField("",10);
-        JTextField tf_id = new JTextField("",10);
-        JPasswordField pf_mdp = new JPasswordField("",10);
-        JTextField tf_age = new JTextField("",10);
-        JTextField tf_genre = new JTextField("",10);
-        JComboBox cb_langue = new JComboBox();
+
         for(Langue lang : Langue.values()){
             cb_langue.addItem(lang.toString());
         }
@@ -88,7 +89,6 @@ public class form_create_user extends JFrame {
         gbc.insets = new Insets(5, 5, 20, 20);
         getContentPane().add(btn_valider,gbc);
 
-
         //Listener
         btn_retour.addActionListener(
                 new ActionListener() {
@@ -99,6 +99,7 @@ public class form_create_user extends JFrame {
                     }
                 }
         );
+
         btn_valider.addActionListener(
                 new ActionListener() {
                     @Override

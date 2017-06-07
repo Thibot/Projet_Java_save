@@ -21,6 +21,7 @@ public class Connexion extends JFrame {
     protected Dimension d = kit.getScreenSize();
     public Connexion(ArrayList<User> liste_utilisateur, Session_connexion_controller session_controller)
     {
+        JButton btn_retour = new JButton("Retour");
         JLabel lb_titre = new JLabel("Se connecter");
         JLabel lb_id = new JLabel("Identifiant : ");
         JTextField tf_id = new JTextField("",10);
@@ -46,8 +47,12 @@ public class Connexion extends JFrame {
         getContentPane().add(lb_mdp,gbc);
         gbc.gridx=0;
         gbc.gridy=3;
+        gbc.insets = new Insets(5, 15, 5, 5);
+        getContentPane().add(btn_retour,gbc);
+        gbc.gridx=1;
+        gbc.gridy=3;
         gbc.gridwidth=GridBagConstraints.REMAINDER;
-        gbc.insets = new Insets(5, 15, 5, 15);
+        gbc.insets = new Insets(5, 5, 5, 15);
         getContentPane().add(btn_connexion,gbc);
 
 
@@ -62,6 +67,15 @@ public class Connexion extends JFrame {
         getContentPane().add(pf_mdp,gbc);
 
 
+        btn_retour.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        dispose();
+                        menu_profil f = new menu_profil(liste_utilisateur);
+                    }
+                }
+        );
 
         btn_connexion.addActionListener(
                 new ActionListener() {

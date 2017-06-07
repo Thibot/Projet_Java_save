@@ -21,10 +21,12 @@ public class menu_profil extends JFrame {
     {
         Session_connexion_controller session_controller = new Session_connexion_controller();
 
+
         JLabel lb_titre = new JLabel("Apprentissage des langues");
         JButton btn_connexion = new JButton("Se connecter");
         JButton btn_create = new JButton("Créer un compte");
         JButton btn_anonyme=new JButton("Anonyme");
+        JButton btn_quitter = new JButton("Quitter");
         GridBagConstraints gbc = new GridBagConstraints();
         setLayout(new GridBagLayout());
 
@@ -42,8 +44,13 @@ public class menu_profil extends JFrame {
         getContentPane().add(btn_create,gbc);
         gbc.gridx=0;
         gbc.gridy=3;
-        gbc.insets = new Insets(5, 80, 10, 80);
+        gbc.insets = new Insets(5, 80, 5, 80);
         getContentPane().add(btn_anonyme,gbc);
+        gbc.gridx=0;
+        gbc.gridy=4;
+        gbc.gridheight=GridBagConstraints.REMAINDER;
+        gbc.insets = new Insets(5, 80, 10, 80);
+        getContentPane().add(btn_quitter,gbc);
 
         btn_connexion.addActionListener(
                 new ActionListener() {

@@ -13,6 +13,7 @@ public class User_controller {
     private User user;
     public User_controller()
     {
+
         user=new User();
     }
 
