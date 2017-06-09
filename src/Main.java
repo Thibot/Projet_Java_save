@@ -1,3 +1,4 @@
+import Controller.Historique_Controller;
 import Model.User;
 import View.menu_profil;
 
@@ -13,7 +14,7 @@ public class Main {
 
     public static void main(String[] args)
     {
-
-        menu_profil profil=new menu_profil(Liste_utilisateur);
+        Historique_Controller histo = new Historique_Controller();
+        menu_profil profil=new menu_profil(Liste_utilisateur,histo);
     }
 }

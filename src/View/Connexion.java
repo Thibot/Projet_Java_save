@@ -1,8 +1,8 @@
 package View;
 
+import Controller.Historique_Controller;
 import Controller.Session_connexion_controller;
-import Model.Session_connexion;
-import Model.User;
+import Model.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,17 +19,23 @@ import static javax.swing.JOptionPane.showConfirmDialog;
 public class Connexion extends JFrame {
     protected Toolkit kit = Toolkit . getDefaultToolkit ();
     protected Dimension d = kit.getScreenSize();
-    public Connexion(ArrayList<User> liste_utilisateur, Session_connexion_controller session_controller)
+    private ArrayList<User> list_user;
+    private Vector<Lecon> list_lecon = new Vector<>();
+    private JButton btn_retour = new JButton("Retour");
+    private JLabel lb_titre = new JLabel("Se connecter");
+    private JLabel lb_id = new JLabel("Identifiant : ");
+    private JTextField tf_id = new JTextField("",10);
+    private JLabel lb_mdp = new JLabel("Mot de passe : ");
+    private JPasswordField pf_mdp = new JPasswordField("",10);
+    private JButton btn_connexion = new JButton("Connexion");
+
+    public Connexion(ArrayList<User> liste_utilisateur, Session_connexion_controller session_controller, Historique_Controller histo)
     {
-        JButton btn_retour = new JButton("Retour");
-        JLabel lb_titre = new JLabel("Se connecter");
-        JLabel lb_id = new JLabel("Identifiant : ");
-        JTextField tf_id = new JTextField("",10);
-        JLabel lb_mdp = new JLabel("Mot de passe : ");
-        JPasswordField pf_mdp = new JPasswordField("",10);
-        JButton btn_connexion = new JButton("Connexion");
+
         GridBagConstraints gbc = new GridBagConstraints();
         setLayout(new GridBagLayout());
+
+        list_user=liste_utilisateur;
 
         gbc.gridx=0;
         gbc.gridy=0;
@@ -72,7 +78,7 @@ public class Connexion extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         dispose();
-                        menu_profil f = new menu_profil(liste_utilisateur);
+                        menu_profil f = new menu_profil(liste_utilisateur,histo);
                     }
                 }
         );
@@ -90,7 +96,8 @@ public class Connexion extends JFrame {
                             session_controller.setSession("CONFIRMED",tf_id.getText());
                             //Transmettre le controleur de session a la fenetre suivante
                             dispose();
-                            Mode_view_abstract next_view = new Mode_confirmed_view(session_controller);
+                            generateLecon();
+                            Mode_view_abstract next_view = new Mode_confirmed_view(session_controller, liste_utilisateur,histo,list_lecon);
 
                         } else {
                             JOptionPane.showMessageDialog(null, "Aucun utilisateur avec ces identifiants","Erreur authentification",JOptionPane.ERROR_MESSAGE);
@@ -133,5 +140,51 @@ public class Connexion extends JFrame {
         {
             return false;
         }
+    }
+
+    private void generateLecon()   //Evolution : rechercher une liste de lecons correspondante à la langue sélectionnée
+    {
+        Conjugaison conjugaison = new Conjugaison(getLangueById(tf_id.getText()));
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 1"));
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 2"));
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 3"));
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 4"));
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 5"));
+        Grammaire grammaire = new Grammaire(tf_id.getText());
+        grammaire.addExercice(new Exercice("Exercice Grammaire 1"));
+        grammaire.addExercice(new Exercice("Exercice Grammaire 2"));
+        grammaire.addExercice(new Exercice("Exercice Grammaire 3"));
+        grammaire.addExercice(new Exercice("Exercice Grammaire 4"));
+        grammaire.addExercice(new Exercice("Exercice Grammaire 5"));
+        Orthographe orthographe = new Orthographe(tf_id.getText());
+        orthographe.addExercice(new Exercice("Exercice Orthographe 1"));
+        orthographe.addExercice(new Exercice("Exercice Orthographe 2"));
+        orthographe.addExercice(new Exercice("Exercice Orthographe 3"));
+        orthographe.addExercice(new Exercice("Exercice Orthographe 4"));
+        orthographe.addExercice(new Exercice("Exercice Orthographe 5"));
+        Vocabulaire vocabulaire = new Vocabulaire(tf_id.getText());
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 1"));
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 2"));
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 3"));
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 4"));
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 5"));
+
+        list_lecon.add(conjugaison);
+        list_lecon.add(grammaire);
+        list_lecon.add(orthographe);
+        list_lecon.add(vocabulaire);
+    }
+
+    private String getLangueById(String id)
+    {
+        String langue="";
+        for(int i=0;i<list_user.size() && langue.equals("");i++)
+        {
+            if(list_user.get(i).getID().equals(id))
+            {
+                langue=list_user.get(i).getLangue();
+            }
+        }
+        return langue;
     }
 }

@@ -1,15 +1,16 @@
 package View;
 
+import Controller.Historique_Controller;
 import Controller.Session_connexion_controller;
 import Controller.User_controller;
-import Model.Langue;
-import Model.User;
+import Model.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Vector;
 
 /**
  * Created by thibaut on 29/05/17.
@@ -31,8 +32,9 @@ public class form_create_user extends JFrame {
     private JTextField tf_age = new JTextField("",10);
     private JTextField tf_genre = new JTextField("",10);
     private JComboBox cb_langue = new JComboBox();
+    private Vector<Lecon> list_lecon = new Vector<>();
 
-    public form_create_user(ArrayList<User> liste_utilisateur)
+    public form_create_user(ArrayList<User> liste_utilisateur, Historique_Controller histo)
     {
 
         for(Langue lang : Langue.values()){
@@ -95,7 +97,7 @@ public class form_create_user extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         dispose();
-                        menu_profil f = new menu_profil(liste_utilisateur);
+                        menu_profil f = new menu_profil(liste_utilisateur,histo);
                     }
                 }
         );
@@ -112,7 +114,8 @@ public class form_create_user extends JFrame {
                             dispose();
                             Session_connexion_controller session_controller = new Session_connexion_controller();
                             session_controller.setSession("CONFIRMED",tf_id.getText());
-                            Mode_view_abstract next_view = new Mode_confirmed_view(session_controller);
+                            generateLecon(cb_langue.getSelectedItem().toString());
+                            Mode_confirmed_view next_view = new Mode_confirmed_view(session_controller,liste_utilisateur,histo,list_lecon);
                         }
                     }
                 }
@@ -124,5 +127,38 @@ public class form_create_user extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
         setVisible (true);
+    }
+
+    private void generateLecon(String langue)   //Evolution : rechercher une liste de lecons correspondante à la langue sélectionnée
+    {
+        Conjugaison conjugaison = new Conjugaison(cb_langue.getSelectedItem().toString());
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 1"));
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 2"));
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 3"));
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 4"));
+        conjugaison.addExercice(new Exercice("Exercice Conjugaison 5"));
+        Grammaire grammaire = new Grammaire(cb_langue.getSelectedItem().toString());
+        grammaire.addExercice(new Exercice("Exercice Grammaire 1"));
+        grammaire.addExercice(new Exercice("Exercice Grammaire 2"));
+        grammaire.addExercice(new Exercice("Exercice Grammaire 3"));
+        grammaire.addExercice(new Exercice("Exercice Grammaire 4"));
+        grammaire.addExercice(new Exercice("Exercice Grammaire 5"));
+        Orthographe orthographe = new Orthographe(cb_langue.getSelectedItem().toString());
+        orthographe.addExercice(new Exercice("Exercice Orthographe 1"));
+        orthographe.addExercice(new Exercice("Exercice Orthographe 2"));
+        orthographe.addExercice(new Exercice("Exercice Orthographe 3"));
+        orthographe.addExercice(new Exercice("Exercice Orthographe 4"));
+        orthographe.addExercice(new Exercice("Exercice Orthographe 5"));
+        Vocabulaire vocabulaire = new Vocabulaire(cb_langue.getSelectedItem().toString());
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 1"));
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 2"));
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 3"));
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 4"));
+        vocabulaire.addExercice(new Exercice("Exercice Vocabulaire 5"));
+
+        list_lecon.add(conjugaison);
+        list_lecon.add(grammaire);
+        list_lecon.add(orthographe);
+        list_lecon.add(vocabulaire);
     }
 }

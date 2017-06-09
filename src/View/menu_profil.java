@@ -1,5 +1,6 @@
 package View;
 
+import Controller.Historique_Controller;
 import Controller.Session_connexion_controller;
 import Model.Session_connexion;
 import Model.User;
@@ -17,8 +18,9 @@ public class menu_profil extends JFrame {
     private Toolkit kit = Toolkit . getDefaultToolkit ();
     private Dimension d = kit.getScreenSize();
 
-    public menu_profil(ArrayList<User> liste_utilisateur)
+    public menu_profil(ArrayList<User> liste_utilisateur,Historique_Controller histo)
     {
+
         Session_connexion_controller session_controller = new Session_connexion_controller();
 
 
@@ -57,7 +59,7 @@ public class menu_profil extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         dispose();
-                        Connexion ihm_connexion = new Connexion(liste_utilisateur,session_controller);
+                        Connexion ihm_connexion = new Connexion(liste_utilisateur,session_controller, histo);
                     }
                 }
         );
@@ -66,7 +68,7 @@ public class menu_profil extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         dispose();
-                        form_create_user create = new form_create_user(liste_utilisateur);
+                        form_create_user create = new form_create_user(liste_utilisateur,histo);
                     }
                 }
         );
@@ -76,6 +78,15 @@ public class menu_profil extends JFrame {
                     public void actionPerformed(ActionEvent e) {
                         dispose();
                         Anonym_langue anonyme_step1 = new Anonym_langue();
+                    }
+                }
+        );
+
+        btn_quitter.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        System.exit(0);
                     }
                 }
         );

@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d836e0e-c1f5-4a46-bae8-3fe06ffd4699" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/Controller/User_controller.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/Controller/User_controller.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view$5.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/Controller/Session_controller.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/Controller/Session_controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/Main.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion$1.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion$2.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Connexion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view$1.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view$2.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view$3.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_anonym_view.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_confirmed_view$1.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_confirmed_view$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_confirmed_view$2.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_confirmed_view$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_confirmed_view.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_confirmed_view.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_view_abstract.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/Mode_view_abstract.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user$1.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user$2.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/form_create_user.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$1.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$1.class" />
@@ -12,10 +25,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$3.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil.class" afterPath="$PROJECT_DIR$/out/production/Projet_Java_save/View/menu_profil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Session_connexion_controller.java" afterPath="$PROJECT_DIR$/src/Controller/Session_connexion_controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/User_controller.java" afterPath="$PROJECT_DIR$/src/Controller/User_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Session_controller.java" afterPath="$PROJECT_DIR$/src/Controller/Session_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Connexion.java" afterPath="$PROJECT_DIR$/src/View/Connexion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Mode_anonym_view.java" afterPath="$PROJECT_DIR$/src/View/Mode_anonym_view.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Mode_confirmed_view.java" afterPath="$PROJECT_DIR$/src/View/Mode_confirmed_view.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Mode_view_abstract.java" afterPath="$PROJECT_DIR$/src/View/Mode_view_abstract.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/form_create_user.java" afterPath="$PROJECT_DIR$/src/View/form_create_user.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/menu_profil.java" afterPath="$PROJECT_DIR$/src/View/menu_profil.java" />
     </list>
@@ -36,92 +51,12 @@
       <file leaf-file-name="Mode_confirmed_view.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Mode_confirmed_view.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+            <state relative-caret-position="425">
+              <caret line="145" column="4" lean-forward="false" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
               <folding>
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1297#1298#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mode_anonym_view.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Mode_anonym_view.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="100" column="10" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="100" selection-end-column="10" />
-              <folding>
-                <element signature="method#Init_pn_contenu#0;class#Mode_anonym_view#0" expanded="false" />
-                <element signature="method#LeconBTN_Step1_Contenu#0;class#Mode_anonym_view#0" expanded="false" />
-                <element signature="method#AfficheListeExo#0;class#Mode_anonym_view#0" expanded="false" />
-                <element signature="method#AfficheExo#0;class#Mode_anonym_view#0" expanded="false" />
-                <element signature="method#AfficheHistorique#0;class#Mode_anonym_view#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu_profil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_create_user.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="111" column="38" lean-forward="true" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session_connexion_controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Session_connexion_controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-              <folding>
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session_connexion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Session_connexion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lecon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Lecon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Anonym_langue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Anonym_langue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-              <folding>
-                <element signature="method#generateLecon#0;class#Anonym_langue#0" expanded="false" />
+                <element signature="e#1722#1723#0" expanded="true" />
+                <element signature="e#1787#1788#0" expanded="true" />
+                <element signature="method#affichMonCompte#0;class#Mode_confirmed_view#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -130,8 +65,8 @@
       <file leaf-file-name="Connexion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Connexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+            <state relative-caret-position="205">
+              <caret line="174" column="36" lean-forward="false" selection-start-line="174" selection-start-column="36" selection-end-line="174" selection-end-column="36" />
               <folding>
                 <element signature="method#id_mdp_isValid#0;class#Connexion#0" expanded="false" />
                 <element signature="method#isRoot#0;class#Connexion#0" expanded="false" />
@@ -140,11 +75,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exercice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Exercice.java">
+      <file leaf-file-name="form_create_user.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="108" lean-forward="false" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
+            <state relative-caret-position="414">
+              <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Session.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1242">
+              <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#332#333#0" expanded="false" />
+                <element signature="e#378#379#0" expanded="false" />
+                <element signature="e#426#427#0" expanded="false" />
+                <element signature="e#459#460#0" expanded="false" />
+                <element signature="e#582#583#0" expanded="false" />
+                <element signature="e#609#610#0" expanded="false" />
+                <element signature="e#739#740#0" expanded="false" />
+                <element signature="e#771#772#0" expanded="false" />
+                <element signature="e#945#946#0" expanded="false" />
+                <element signature="e#989#990#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mode_anonym_view.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/Mode_anonym_view.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="45" column="10" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="45" selection-end-column="10" />
+              <folding>
+                <element signature="e#1138#1139#0" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1856#1857#0" expanded="true" />
+                <element signature="e#1918#1919#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mode_view_abstract.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/View/Mode_view_abstract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2772">
+              <caret line="164" column="43" lean-forward="true" selection-start-line="164" selection-start-column="43" selection-end-line="164" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Anonym_langue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/Anonym_langue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -182,11 +174,8 @@
         <option value="$PROJECT_DIR$/src/Model/List_User.java" />
         <option value="$PROJECT_DIR$/src/Model/Type_session.java" />
         <option value="$PROJECT_DIR$/src/Model/Session_connexion.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Model/User.java" />
         <option value="$PROJECT_DIR$/src/Controller/Exercice_Controller.java" />
-        <option value="$PROJECT_DIR$/src/View/Mode_view_abstract.java" />
-        <option value="$PROJECT_DIR$/src/Controller/Session_controller.java" />
         <option value="$PROJECT_DIR$/src/Model/Conjugaison.java" />
         <option value="$PROJECT_DIR$/src/Model/Vocabulaire.java" />
         <option value="$PROJECT_DIR$/src/Model/Orthographe.java" />
@@ -196,13 +185,16 @@
         <option value="$PROJECT_DIR$/src/Model/Historique.java" />
         <option value="$PROJECT_DIR$/src/Model/Session.java" />
         <option value="$PROJECT_DIR$/src/Model/Exercice.java" />
-        <option value="$PROJECT_DIR$/src/View/Mode_anonym_view.java" />
-        <option value="$PROJECT_DIR$/src/View/form_create_user.java" />
         <option value="$PROJECT_DIR$/src/Controller/User_controller.java" />
-        <option value="$PROJECT_DIR$/src/View/Connexion.java" />
-        <option value="$PROJECT_DIR$/src/View/menu_profil.java" />
         <option value="$PROJECT_DIR$/src/View/Anonym_langue.java" />
         <option value="$PROJECT_DIR$/src/Controller/Session_connexion_controller.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Session_controller.java" />
+        <option value="$PROJECT_DIR$/src/View/Connexion.java" />
+        <option value="$PROJECT_DIR$/src/View/menu_profil.java" />
+        <option value="$PROJECT_DIR$/src/View/form_create_user.java" />
+        <option value="$PROJECT_DIR$/src/View/Mode_view_abstract.java" />
+        <option value="$PROJECT_DIR$/src/View/Mode_anonym_view.java" />
         <option value="$PROJECT_DIR$/src/View/Mode_confirmed_view.java" />
       </list>
     </option>
@@ -234,7 +226,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -317,8 +311,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -747,16 +739,18 @@
       <workItem from="1496737962873" duration="191000" />
       <workItem from="1496740956995" duration="1998000" />
       <workItem from="1496759456861" duration="2169000" />
-      <workItem from="1496845131473" duration="4567000" />
+      <workItem from="1496845131473" duration="6602000" />
+      <workItem from="1496904456571" duration="4675000" />
+      <workItem from="1497010082925" duration="3047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68508000" />
+    <option name="totallyTimeSpent" value="78265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -773,7 +767,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -797,7 +791,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -922,13 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Type_session.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -944,21 +931,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Exercice_Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/View/Mode_view_abstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="129" lean-forward="false" selection-start-line="17" selection-start-column="129" selection-end-line="17" selection-end-column="129" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Conjugaison.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -994,16 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Historique_Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="117" column="52" lean-forward="false" selection-start-line="117" selection-start-column="52" selection-end-line="117" selection-end-column="52" />
-          <folding>
-            <element signature="method#addSession#0;class#Historique_Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Historique.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
@@ -1012,29 +974,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Session_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="method#addLecon#0;class#Session_controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Lecon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,31 +985,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="108" lean-forward="false" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/class_diagram.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/class_diagram.uml" />
     <entry file="uml://JAVA/Controller">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1080,15 +1002,15 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-141.5" y="238.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-141.0" y="238.0" />
           <SelectedNodes>
             <node>Controller.Historique_Controller</node>
           </SelectedNodes>
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
-            <Category>Methods</Category>
             <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1155,16 +1077,16 @@
               <point x="31.5" y="15.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.1" x="-256.0454545454545" y="133.0" />
+          <settings layout="Hierarchic Group" zoom="1.1" x="-256.0" y="133.0" />
           <SelectedNodes>
             <node>Controller</node>
           </SelectedNodes>
           <Categories>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
             <Category>Fields</Category>
             <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1238,13 +1160,13 @@
               <point x="0.0" y="64.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.46159754224270355" x="-282.8735440931779" y="509.9334442595674" />
+          <settings layout="Hierarchic Group" zoom="0.46159754224270355" x="-283.0" y="510.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
-            <Category>Methods</Category>
             <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1270,13 +1192,28 @@
           <settings layout="Hierarchic Group" zoom="0.4208683473389356" x="551.0" y="704.0" />
           <SelectedNodes />
           <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
             <Category>Properties</Category>
             <Category>Methods</Category>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Session_connexion_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="68" lean-forward="true" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1288,31 +1225,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Anonym_langue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+        <state relative-caret-position="234">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
-            <element signature="method#generateLecon#0;class#Anonym_langue#0" expanded="false" />
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#543#544#0" expanded="false" />
+            <element signature="e#580#581#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#657#658#0" expanded="false" />
+            <element signature="e#686#687#0" expanded="false" />
+            <element signature="e#719#720#0" expanded="false" />
+            <element signature="e#744#745#0" expanded="false" />
+            <element signature="e#784#785#0" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+            <element signature="e#839#840#0" expanded="false" />
+            <element signature="e#865#866#0" expanded="false" />
+            <element signature="e#907#908#0" expanded="false" />
+            <element signature="e#930#931#0" expanded="false" />
+            <element signature="e#1103#1104#0" expanded="false" />
+            <element signature="e#1129#1130#0" expanded="false" />
+            <element signature="e#1341#1342#0" expanded="false" />
+            <element signature="e#1371#1372#0" expanded="false" />
+            <element signature="e#1500#1501#0" expanded="false" />
+            <element signature="e#1528#1529#0" expanded="false" />
+            <element signature="e#1687#1688#0" expanded="false" />
+            <element signature="e#1721#1722#0" expanded="false" />
+            <element signature="e#1850#1851#0" expanded="false" />
+            <element signature="e#1879#1880#0" expanded="false" />
+            <element signature="e#2027#2028#0" expanded="false" />
+            <element signature="e#2063#2064#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Connexion.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/Session.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        <state relative-caret-position="1242">
+          <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
           <folding>
-            <element signature="method#id_mdp_isValid#0;class#Connexion#0" expanded="false" />
-            <element signature="method#isRoot#0;class#Connexion#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#332#333#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+            <element signature="e#426#427#0" expanded="false" />
+            <element signature="e#459#460#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#739#740#0" expanded="false" />
+            <element signature="e#771#772#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#989#990#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1321,50 +1286,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="88" column="39" lean-forward="true" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+          <folding>
+            <element signature="e#3037#3038#0" expanded="true" />
+            <element signature="e#3099#3100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Session_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Anonym_langue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Session_connexion_controller.java">
+    <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        <state relative-caret-position="414">
+          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Historique_Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
           <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="false" />
+            <element signature="e#957#958#0" expanded="false" />
+            <element signature="method#addSession#0;class#Historique_Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Mode_anonym_view.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="100" column="10" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="100" selection-end-column="10" />
+        <state relative-caret-position="187">
+          <caret line="45" column="10" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="45" selection-end-column="10" />
           <folding>
-            <element signature="method#Init_pn_contenu#0;class#Mode_anonym_view#0" expanded="false" />
-            <element signature="method#LeconBTN_Step1_Contenu#0;class#Mode_anonym_view#0" expanded="false" />
-            <element signature="method#AfficheListeExo#0;class#Mode_anonym_view#0" expanded="false" />
-            <element signature="method#AfficheExo#0;class#Mode_anonym_view#0" expanded="false" />
-            <element signature="method#AfficheHistorique#0;class#Mode_anonym_view#0" expanded="false" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1856#1857#0" expanded="true" />
+            <element signature="e#1918#1919#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Connexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="174" column="36" lean-forward="false" selection-start-line="174" selection-start-column="36" selection-end-line="174" selection-end-column="36" />
+          <folding>
+            <element signature="method#id_mdp_isValid#0;class#Connexion#0" expanded="false" />
+            <element signature="method#isRoot#0;class#Connexion#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Mode_confirmed_view.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        <state relative-caret-position="425">
+          <caret line="145" column="4" lean-forward="false" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
           <folding>
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="method#affichMonCompte#0;class#Mode_confirmed_view#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
+    <entry file="file://$PROJECT_DIR$/src/View/Mode_view_abstract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="111" column="38" lean-forward="true" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="38" />
+        <state relative-caret-position="2772">
+          <caret line="164" column="43" lean-forward="true" selection-start-line="164" selection-start-column="43" selection-end-line="164" selection-end-column="43" />
           <folding />
         </state>
       </provider>

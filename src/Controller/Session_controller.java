@@ -13,19 +13,8 @@ public class Session_controller {
         session=new Session();
     }
 
-    /**
-     * Méthode ajoutant une leçon dans la liste de leçon
-     * @param lecon
-     */
-    public void addLecon(Lecon lecon)
+    public Session getSession()
     {
-        if(session.getList_Lecon().contains(lecon))
-        {
-            session.getList_Lecon().get(session.getList_Lecon().indexOf(lecon)).addExercice(lecon.getExercice());
-        }else
-        {
-            session.getList_Lecon().add(lecon);
-        }
-
+        return session;
     }
 }
