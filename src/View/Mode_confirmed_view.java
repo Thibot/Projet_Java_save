@@ -26,23 +26,12 @@ public class Mode_confirmed_view extends Mode_view_abstract{
     private JButton btn_compte = new JButton("Mon Compte");
     private JButton btn_rtr_menu_principal = new JButton("Menu");
     private JButton btn_quitter = new JButton("Quitter");
-
-    //private Vector<Lecon> list_lecon=new Vector<>();
     private ArrayList<User> list_user;
-
-    //private User user = new User();
 
     public Mode_confirmed_view(Session_connexion_controller session_controller, ArrayList<User> liste_utilisateur, Historique_Controller histo,Vector<Lecon> list_Lecon)
     {
         list_user=liste_utilisateur;
         Langue=getLangueById(session_controller.getSession().getId());
-
-        /*for(int i=0;i<list_Lecon.size();i++)
-        {
-            list_lecon.add(list_Lecon.get(i));
-        }*/
-
-
 
         recup_profil_user(session_controller,liste_utilisateur);
         getContentPane().setLayout(new BoxLayout(getContentPane(),BoxLayout.X_AXIS));

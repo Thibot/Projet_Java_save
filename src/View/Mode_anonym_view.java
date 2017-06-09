@@ -25,8 +25,6 @@ public class Mode_anonym_view extends Mode_view_abstract{
     private JButton btn_lecons = new JButton("Leçons");
     private JButton btn_quitter = new JButton("Quitter");
 
-    //private Vector<Lecon> list_lecon=new Vector<>();
-
     public Mode_anonym_view(Vector<Lecon> list_Lecon,String langue)
     {
 
