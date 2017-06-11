@@ -39,10 +39,8 @@ public class Mode_confirmed_view extends Mode_view_abstract{
         recup_profil_user(session_controller,liste_utilisateur);
         getContentPane().setLayout(new BoxLayout(getContentPane(),BoxLayout.X_AXIS));
 
-
         Init_pn_menu();
         Init_pn_contenu();
-
 
         btn_accueil.addActionListener(
                 new ActionListener() {

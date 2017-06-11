@@ -28,7 +28,7 @@ public class Historique_Controller {
 
     /**
      * Méthode retournant l'historique
-     * @return Vector<Session>
+     * @return Vector
      */
     public Vector<Session> getHistorique()
     {

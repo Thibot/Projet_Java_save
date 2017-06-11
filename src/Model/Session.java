@@ -19,7 +19,7 @@ public class Session {
 
     /**
      * Méthode retournant la liste des lecon
-     * @return Vector<Lecon>
+     * @return Vector
      */
     public Vector<Lecon> getList_Lecon()
     {

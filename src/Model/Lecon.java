@@ -26,7 +26,7 @@ public abstract class Lecon {
 
     /**
      * Méthode retournant le dernier Exercice de la liste d'exercices
-     * @return
+     * @return Exercice
      */
     public Exercice getExercice()
     {
@@ -45,7 +45,7 @@ public abstract class Lecon {
 
     /**
      * Méthode retournant la liste d'exercices
-     * @return
+     * @return Vector
      */
     public Vector<Exercice> getList_exercices()
     {
@@ -54,7 +54,7 @@ public abstract class Lecon {
 
     /**
      * Méthode retournant la langue de la leçon
-     * @return
+     * @return String
      */
     public String getLangue()
     {
