@@ -11,44 +11,34 @@ import java.util.Vector;
  */
 public class Historique_Controller {
     private Historique histo;
+
+    /**
+     * Constructeur du controleur
+     */
     public Historique_Controller()
     {
         histo=new Historique();
     }
 
     /**
-     * Méthode testant si l'historique contient déjà une session avec la date du jour, renvoie -1 si aucune session n'existe à la date du jour
-     * @param session
-     * @return
+     * Méthode retournant l'instance de l'historique
+     * @return Historique
      */
-    public int ContientSessionDate(Session session)
-    {
-        int i,res=-1;
-
-        for(i=0;i<histo.getHistorique().size() && res==-1;i++)
-        {
-            if(histo.getHistorique().get(i).getDate()==session.getDate())
-            {
-                res=i;
-            }
-        }
-        return res;
-    }
-
     public Historique getHisto(){return histo;}
+
+    /**
+     * Méthode retournant l'historique
+     * @return Vector<Session>
+     */
     public Vector<Session> getHistorique()
     {
         return histo.getHistorique();
     }
 
-    public void addSession(Session session)
-    {
-        if(!histo.getHistorique().contains(session.getDate()))
-        {
-            histo.getHistorique().add(session);
-        }
-    }
-
+    /**
+     * Méthode ajoutant un exercice à l'historique
+     * @param lecon,exercice,langue
+     */
     public void addExoHisto(String lecon,Exercice exo, String langue)
     {
         Exercice exo_cp = exo;
@@ -111,6 +101,11 @@ public class Historique_Controller {
     }
 
 
+    /**
+     * Méthode retournant un booléen pour savoir si une date est déjà présente dans l'historique
+     * @param date
+     * @return boolean
+     */
     public Boolean ContientDate(String date)
     {
         Boolean ok=false;
@@ -129,6 +124,11 @@ public class Historique_Controller {
         return ok;
     }
 
+    /**
+     * Méthode retournant un booléen correspondant à la présence d'une lecon dans l'historique à l'aide de l'indice de l'historique du jour et du nom de la leçon
+     * @param i,lecon
+     * @return boolean
+     */
     public Boolean ContientLecon(int i,String lecon)
     {
         Boolean ok=false;

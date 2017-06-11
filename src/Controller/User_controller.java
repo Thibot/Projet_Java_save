@@ -11,12 +11,21 @@ import java.util.List;
  */
 public class User_controller {
     private User user;
+
+    /**
+     * Constructeur du controleur créant un nouvel utilisateur
+     */
     public User_controller()
     {
 
         user=new User();
     }
 
+    /**
+     * Méthode modifiant les informations de l'utilisateur
+     * @param Nom,Prenom,ID,Mdp,age,genre,langue
+     * @return boolean
+     */
     public Boolean CreateUser(String Nom,String Prenom, String ID, String Mdp, int age, String genre, String langue)
     {
         if(age>=0 && age<150 && GenreExist(genre) && LangueExist(langue))
@@ -43,6 +52,11 @@ public class User_controller {
 
     }
 
+    /**
+     * Méthode vérifiant si la langue existe
+     * @param langue
+     * @return boolean
+     */
     public Boolean LangueExist(String langue)
     {
         Boolean ok=false;
@@ -56,6 +70,11 @@ public class User_controller {
         return ok;
     }
 
+    /**
+     * Méthode vérifiant si le genre existe
+     * @param genre
+     * @return boolean
+     */
     public Boolean GenreExist(String genre)
     {
         Boolean ok=false;
@@ -68,11 +87,21 @@ public class User_controller {
         return ok;
     }
 
+
+    /**
+     * Méthode renvoyant l'utilisateur
+     * @return User
+     */
     public User getUser()
     {
         return user;
     }
 
+    /**
+     * Méthode vérifiant si l'utilisateur existe déjà dans la liste des utilisateurs
+     * @param ID,liste
+     * @return boolean
+     */
     public Boolean UserExist(String ID, ArrayList<User> liste)
     {
         Boolean ok=true;

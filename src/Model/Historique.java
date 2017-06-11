@@ -40,6 +40,10 @@ public class Historique {
         }
     }
 
+    /**
+     * Méthode pour un affichage en console de l'historique, utile lors du développement
+     * @return String
+     */
     public String getAfficheHisto()
     {
         String s="";

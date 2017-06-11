@@ -28,6 +28,9 @@ public class Mode_confirmed_view extends Mode_view_abstract{
     private JButton btn_quitter = new JButton("Quitter");
     private ArrayList<User> list_user;
 
+    /**
+     * Constructeur de la vue en mode utilisateur enregistré
+     */
     public Mode_confirmed_view(Session_connexion_controller session_controller, ArrayList<User> liste_utilisateur, Historique_Controller histo,Vector<Lecon> list_Lecon)
     {
         list_user=liste_utilisateur;
@@ -100,6 +103,9 @@ public class Mode_confirmed_view extends Mode_view_abstract{
         setVisible (true);
     }
 
+    /**
+     * Méthode générant le menu de gauche
+     */
     protected void Init_pn_menu()
     {
         getContentPane().add(pn_menu);
@@ -114,10 +120,19 @@ public class Mode_confirmed_view extends Mode_view_abstract{
 
     }
 
+    /**
+     * Méthode pour récupérer le profil de l'utilisateur
+     * @param session_controller,liste_utilisateur
+     */
     private void recup_profil_user(Session_connexion_controller session_controller,ArrayList<User> liste_utilisateur) {
         String id = session_controller.getSession().getId();
     }
 
+    /**
+     * Méthode récupérant la langue d'un utilisateur grâce à son id
+     * @param id
+     * @return String
+     */
     private String getLangueById(String id)
     {
         String langue="";
@@ -131,6 +146,10 @@ public class Mode_confirmed_view extends Mode_view_abstract{
         return langue;
     }
 
+    /**
+     * Méthode affichant les informations de l'utilisateurs
+     * @param session_controller,liste_utilisateur
+     */
     private void affichMonCompte(Session_connexion_controller session_controller, ArrayList<User> liste_utilisateur)
     {
         Boolean ok=false;

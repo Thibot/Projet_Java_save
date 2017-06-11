@@ -29,6 +29,10 @@ public class Connexion extends JFrame {
     private JPasswordField pf_mdp = new JPasswordField("",10);
     private JButton btn_connexion = new JButton("Connexion");
 
+    /**
+     * Constructeur de la vue de connexion
+     * @param liste_utilisateur,session_controller,histo
+     */
     public Connexion(ArrayList<User> liste_utilisateur, Session_connexion_controller session_controller, Historique_Controller histo)
     {
 
@@ -117,6 +121,10 @@ public class Connexion extends JFrame {
         setVisible (true);
     }
 
+    /**
+     * Méthode vérifiant la validité du mot de passe
+     * @return boolean
+     */
     public Boolean id_mdp_isValid(String id, String mdp, ArrayList<User> liste_utilisateur)
     {
         Boolean ok=false;
@@ -131,6 +139,11 @@ public class Connexion extends JFrame {
         return ok;
     }
 
+    /**
+     * Méthode vérifiant si les identifiants sont ceux de l'administrateur pour une possible interface administrateur
+     * @param id,mdp
+     * @return boolean
+     */
     public Boolean isRoot(String id, String mdp)
     {
         if(id.compareTo("root")==0 && mdp.compareTo("1234")==0)
@@ -142,6 +155,9 @@ public class Connexion extends JFrame {
         }
     }
 
+    /**
+     * Méthode générant la liste de lecon qui, avec une base de données, serait récupérée par un requette
+     */
     private void generateLecon()   //Evolution : rechercher une liste de lecons correspondante à la langue sélectionnée
     {
         Conjugaison conjugaison = new Conjugaison(getLangueById(tf_id.getText()));
@@ -175,6 +191,11 @@ public class Connexion extends JFrame {
         list_lecon.add(vocabulaire);
     }
 
+    /**
+     * Méthode retournant la langue d'un utilisateur
+     * @param id
+     * @return String
+     */
     private String getLangueById(String id)
     {
         String langue="";

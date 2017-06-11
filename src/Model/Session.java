@@ -2,7 +2,6 @@ package Model; /**
  * Created by thibaut on 03/02/17.
  */
 
-import java.util.Date;
 import java.util.Vector;
 
 public class Session {
@@ -18,6 +17,10 @@ public class Session {
         list_lecon=new Vector<Lecon>();
     }
 
+    /**
+     * Méthode retournant la liste des lecon
+     * @return Vector<Lecon>
+     */
     public Vector<Lecon> getList_Lecon()
     {
         return list_lecon;
@@ -67,6 +70,10 @@ public class Session {
 
     }
 
+    /**
+     * Méthode retournant la liste des lecon de la session pour un affichage possible
+     * @return String
+     */
     public String getAfficheSession()
     {
         String s="<html> ";

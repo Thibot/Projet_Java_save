@@ -34,6 +34,10 @@ public class form_create_user extends JFrame {
     private JComboBox cb_langue = new JComboBox();
     private Vector<Lecon> list_lecon = new Vector<>();
 
+    /**
+     * Constructeur de la vue du formulaire d'inscription
+     * @param liste_utilisateur,histo
+     */
     public form_create_user(ArrayList<User> liste_utilisateur, Historique_Controller histo)
     {
 
@@ -114,7 +118,7 @@ public class form_create_user extends JFrame {
                             dispose();
                             Session_connexion_controller session_controller = new Session_connexion_controller();
                             session_controller.setSession("CONFIRMED",tf_id.getText());
-                            generateLecon(cb_langue.getSelectedItem().toString());
+                            generateLecon();
                             Mode_confirmed_view next_view = new Mode_confirmed_view(session_controller,liste_utilisateur,histo,list_lecon);
                         }
                     }
@@ -129,7 +133,10 @@ public class form_create_user extends JFrame {
         setVisible (true);
     }
 
-    private void generateLecon(String langue)   //Evolution : rechercher une liste de lecons correspondante à la langue sélectionnée
+    /**
+     * Méthode générant la liste de lecon qui, avec une base de données, serait récupérée par un requette
+     */
+    private void generateLecon()   //Evolution : rechercher une liste de lecons correspondante à la langue sélectionnée
     {
         Conjugaison conjugaison = new Conjugaison(cb_langue.getSelectedItem().toString());
         conjugaison.addExercice(new Exercice("Exercice Conjugaison 1"));

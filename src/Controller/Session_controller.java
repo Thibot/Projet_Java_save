@@ -8,6 +8,7 @@ import Model.Session;
  */
 public class Session_controller {
     private Session session;
+
     public Session_controller()
     {
         session=new Session();

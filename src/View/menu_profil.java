@@ -18,6 +18,10 @@ public class menu_profil extends JFrame {
     private Toolkit kit = Toolkit . getDefaultToolkit ();
     private Dimension d = kit.getScreenSize();
 
+    /**
+     * Constructeur de la première vue identifiable comme menu principal de l'application
+     * @param liste_utilisateur,histo
+     */
     public menu_profil(ArrayList<User> liste_utilisateur,Historique_Controller histo)
     {
 

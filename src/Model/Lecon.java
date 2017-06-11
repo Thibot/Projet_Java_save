@@ -61,6 +61,10 @@ public abstract class Lecon {
         return langue;
     }
 
+    /**
+     * Méthode retournant le type de la lecon
+     * @return String
+     */
     public String toString(){
         return name;
     };

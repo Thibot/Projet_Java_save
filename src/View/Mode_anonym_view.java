@@ -25,6 +25,10 @@ public class Mode_anonym_view extends Mode_view_abstract{
     private JButton btn_lecons = new JButton("Leçons");
     private JButton btn_quitter = new JButton("Quitter");
 
+    /**
+     * Constructeur de la vue en mode anonyme
+     * @param list_Lecon,langue
+     */
     public Mode_anonym_view(Vector<Lecon> list_Lecon,String langue)
     {
 
@@ -74,6 +78,9 @@ public class Mode_anonym_view extends Mode_view_abstract{
         setVisible (true);
     }
 
+    /**
+     * Méthode générant le menu de gauche
+     */
     protected void Init_pn_menu()
     {
         getContentPane().add(pn_menu);
@@ -84,7 +91,4 @@ public class Mode_anonym_view extends Mode_view_abstract{
         pn_menu.add(btn_lecons);
         pn_menu.add(btn_quitter);
     }
-
-    //Initialisation du panel central qui s'effectue à la création de l'interface
-
 }

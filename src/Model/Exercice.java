@@ -8,6 +8,10 @@ public class Exercice {
     protected String nom;
     protected String contenu;
 
+    /**
+     * Constructeur de l'instance d'exercice
+     * @param Nom
+     */
     public Exercice(String Nom) {
         nom = Nom;
         contenu = "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.<br>" +
@@ -22,10 +26,19 @@ public class Exercice {
                 "pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</html>";
     }
 
+    /**
+     * Méthode retournant le nom de l'exercice
+     * @return String
+     */
     public String getNom()
     {
         return nom;
     }
+
+    /**
+     * Méthode retournant le contenu de l'exercice
+     * @return String
+     */
     public String getContenu() {
         return contenu;
     }

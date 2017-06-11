@@ -7,9 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d836e0e-c1f5-4a46-bae8-3fe06ffd4699" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Historique_Controller.java" afterPath="$PROJECT_DIR$/src/Controller/Historique_Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Session_connexion_controller.java" afterPath="$PROJECT_DIR$/src/Controller/Session_connexion_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Session_controller.java" afterPath="$PROJECT_DIR$/src/Controller/Session_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/User_controller.java" afterPath="$PROJECT_DIR$/src/Controller/User_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Exercice.java" afterPath="$PROJECT_DIR$/src/Model/Exercice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Historique.java" afterPath="$PROJECT_DIR$/src/Model/Historique.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Lecon.java" afterPath="$PROJECT_DIR$/src/Model/Lecon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Session.java" afterPath="$PROJECT_DIR$/src/Model/Session.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Session_connexion.java" afterPath="$PROJECT_DIR$/src/Model/Session_connexion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Anonym_langue.java" afterPath="$PROJECT_DIR$/src/View/Anonym_langue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Connexion.java" afterPath="$PROJECT_DIR$/src/View/Connexion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Mode_anonym_view.java" afterPath="$PROJECT_DIR$/src/View/Mode_anonym_view.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Mode_confirmed_view.java" afterPath="$PROJECT_DIR$/src/View/Mode_confirmed_view.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Mode_view_abstract.java" afterPath="$PROJECT_DIR$/src/View/Mode_view_abstract.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/form_create_user.java" afterPath="$PROJECT_DIR$/src/View/form_create_user.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/menu_profil.java" afterPath="$PROJECT_DIR$/src/View/menu_profil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,274 +39,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Mode_confirmed_view.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/View/Mode_confirmed_view.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-              <folding>
-                <element signature="method#Mode_confirmed_view#0;class#Mode_confirmed_view#0" expanded="false" />
-                <element signature="e#1508#1509#0" expanded="true" />
-                <element signature="e#1573#1574#0" expanded="true" />
-                <element signature="method#Init_pn_menu#0;class#Mode_confirmed_view#0" expanded="false" />
-                <element signature="method#recup_profil_user#0;class#Mode_confirmed_view#0" expanded="false" />
-                <element signature="method#getLangueById#0;class#Mode_confirmed_view#0" expanded="false" />
-                <element signature="method#affichMonCompte#0;class#Mode_confirmed_view#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_create_user.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Session.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#332#333#0" expanded="false" />
-                <element signature="e#378#379#0" expanded="false" />
-                <element signature="e#426#427#0" expanded="false" />
-                <element signature="e#459#460#0" expanded="false" />
-                <element signature="e#582#583#0" expanded="false" />
-                <element signature="e#609#610#0" expanded="false" />
-                <element signature="e#739#740#0" expanded="false" />
-                <element signature="e#771#772#0" expanded="false" />
-                <element signature="e#945#946#0" expanded="false" />
-                <element signature="e#989#990#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mode_anonym_view.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Mode_anonym_view.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-              <folding>
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1147#1148#0" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
-                <element signature="e#1862#1863#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mode_view_abstract.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Mode_view_abstract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+            <state relative-caret-position="198">
+              <caret line="17" column="68" lean-forward="true" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/View" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/View">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>View</OriginalElement>
-              <nodes>
-                <node x="635.0" y="1483.0">View.menu_profil</node>
-                <node x="14.5" y="1078.0">View.Anonym_langue</node>
-                <node x="734.4791666666667" y="587.0">View.Mode_confirmed_view</node>
-                <node x="0.0" y="659.0">View.Mode_anonym_view</node>
-                <node x="276.5" y="970.0">View.Connexion</node>
-                <node x="285.63541666666663" y="0.0">View.Mode_view_abstract</node>
-                <node x="718.5" y="934.0">View.form_create_user</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="View.menu_profil" target="View.form_create_user">
-                  <point x="13.5" y="-52.0" />
-                  <point x="729.5" y="1443.0" />
-                  <point x="839.0" y="1443.0" />
-                  <point x="-120.5" y="244.5" />
-                </edge>
-                <edge source="View.Mode_confirmed_view" target="View.menu_profil">
-                  <point x="130.33333333333326" y="148.5" />
-                  <point x="1060.3125" y="909.0" />
-                  <point x="1211.0" y="909.0" />
-                  <point x="1211.0" y="1463.0" />
-                  <point x="783.5" y="1463.0" />
-                  <point x="67.49999999999999" y="-52.0" />
-                </edge>
-                <edge source="View.Connexion" target="View.menu_profil">
-                  <point x="105.49999999999994" y="208.5" />
-                  <point x="593.0" y="1443.0" />
-                  <point x="702.5" y="1443.0" />
-                  <point x="-13.5" y="-52.0" />
-                </edge>
-                <edge source="View.Anonym_langue" target="View.Mode_anonym_view">
-                  <point x="0.0" y="-100.5" />
-                  <point x="0.0" y="76.5" />
-                </edge>
-                <edge source="View.menu_profil" target="View.Connexion">
-                  <point x="-40.5" y="-52.0" />
-                  <point x="675.5" y="1453.0" />
-                  <point x="382.0" y="1453.0" />
-                  <point x="-105.5" y="208.5" />
-                </edge>
-                <edge source="View.Mode_confirmed_view" target="View.Mode_view_abstract">
-                  <point x="0.0" y="-148.5" />
-                  <point x="929.9791666666667" y="562.0" />
-                  <point x="677.1354166666666" y="562.0" />
-                  <point x="130.5" y="268.5" />
-                </edge>
-                <edge source="View.Mode_anonym_view" target="View.Mode_view_abstract">
-                  <point x="0.0" y="-76.5" />
-                  <point x="135.5" y="562.0" />
-                  <point x="416.13541666666663" y="562.0" />
-                  <point x="-130.5" y="268.5" />
-                </edge>
-                <edge source="View.Connexion" target="View.Mode_confirmed_view">
-                  <point x="-5.6843418860808015E-14" y="-208.5" />
-                  <point x="487.49999999999994" y="909.0" />
-                  <point x="799.6458333333333" y="909.0" />
-                  <point x="-130.33333333333337" y="148.5" />
-                </edge>
-                <edge source="View.form_create_user" target="View.Mode_confirmed_view">
-                  <point x="0.0" y="-244.5" />
-                  <point x="959.5" y="909.0" />
-                  <point x="929.9791666666667" y="909.0" />
-                  <point x="0.0" y="148.5" />
-                </edge>
-                <edge source="View.form_create_user" target="View.menu_profil">
-                  <point x="120.5" y="244.5" />
-                  <point x="1080.0" y="1453.0" />
-                  <point x="756.5" y="1453.0" />
-                  <point x="40.5" y="-52.0" />
-                </edge>
-                <edge source="View.menu_profil" target="View.Anonym_langue">
-                  <point x="-67.5" y="-52.0" />
-                  <point x="648.5" y="1463.0" />
-                  <point x="135.5" y="1463.0" />
-                  <point x="0.0" y="100.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.5749844430616055" x="-172.5974025974026" y="427.4025974025974" />
-              <SelectedNodes>
-                <node>View.menu_profil</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/Model" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/Model">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>Model</OriginalElement>
-              <nodes>
-                <node x="1219.5" y="0.0">Model.Type_session</node>
-                <node x="0.0" y="1155.0">Model.Langue</node>
-                <node x="515.0" y="491.0">Model.Orthographe</node>
-                <node x="734.0" y="491.0">Model.Vocabulaire</node>
-                <node x="944.0" y="491.0">Model.Grammaire</node>
-                <node x="63.0" y="430.0">Model.Session</node>
-                <node x="1173.0" y="129.0">Model.Session_connexion</node>
-                <node x="301.0" y="491.0">Model.Conjugaison</node>
-                <node x="72.5" y="657.0">Model.Historique</node>
-                <node x="194.0" y="1155.0">Model.Genre</node>
-                <node x="476.5" y="154.0">Model.Lecon</node>
-                <node x="512.0" y="0.0">Model.Exercice</node>
-                <node x="0.0" y="836.0">Model.User</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="Model.Vocabulaire" target="Model.Lecon">
-                  <point x="0.0" y="-27.5" />
-                  <point x="829.0" y="410.0" />
-                  <point x="669.7" y="410.0" />
-                  <point x="55.200000000000045" y="113.0" />
-                </edge>
-                <edge source="Model.Orthographe" target="Model.Lecon">
-                  <point x="0.0" y="-27.5" />
-                  <point x="0.0" y="113.0" />
-                </edge>
-                <edge source="Model.Historique" target="Model.Session">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Model.Lecon" target="Model.Exercice">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Model.Conjugaison" target="Model.Lecon">
-                  <point x="0.0" y="-27.5" />
-                  <point x="398.0" y="410.0" />
-                  <point x="559.3" y="410.0" />
-                  <point x="-55.200000000000045" y="113.0" />
-                </edge>
-                <edge source="Model.Grammaire" target="Model.Lecon">
-                  <point x="0.0" y="-27.5" />
-                  <point x="1036.0" y="400.0" />
-                  <point x="724.9" y="400.0" />
-                  <point x="110.39999999999998" y="113.0" />
-                </edge>
-                <edge source="Model.Session_connexion" target="Model.Type_session">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Model.Session" target="Model.Lecon">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Model.User" target="Model.Historique">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.7096774193548387" x="62.45454545454555" y="328.1818181818182" />
-              <SelectedNodes>
-                <node>Model.Type_session</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Anonym_langue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Anonym_langue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -328,29 +80,29 @@
         <option value="$PROJECT_DIR$/src/Helper/CSVHelpher.java" />
         <option value="$PROJECT_DIR$/src/Model/List_User.java" />
         <option value="$PROJECT_DIR$/src/Model/Type_session.java" />
-        <option value="$PROJECT_DIR$/src/Model/Session_connexion.java" />
         <option value="$PROJECT_DIR$/src/Model/User.java" />
         <option value="$PROJECT_DIR$/src/Controller/Exercice_Controller.java" />
         <option value="$PROJECT_DIR$/src/Model/Conjugaison.java" />
         <option value="$PROJECT_DIR$/src/Model/Vocabulaire.java" />
         <option value="$PROJECT_DIR$/src/Model/Orthographe.java" />
         <option value="$PROJECT_DIR$/src/Model/Grammaire.java" />
-        <option value="$PROJECT_DIR$/src/Model/Lecon.java" />
-        <option value="$PROJECT_DIR$/src/Controller/Historique_Controller.java" />
-        <option value="$PROJECT_DIR$/src/Model/Historique.java" />
-        <option value="$PROJECT_DIR$/src/Model/Session.java" />
-        <option value="$PROJECT_DIR$/src/Model/Exercice.java" />
-        <option value="$PROJECT_DIR$/src/Controller/User_controller.java" />
-        <option value="$PROJECT_DIR$/src/View/Anonym_langue.java" />
-        <option value="$PROJECT_DIR$/src/Controller/Session_connexion_controller.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Historique_Controller.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Session_connexion_controller.java" />
         <option value="$PROJECT_DIR$/src/Controller/Session_controller.java" />
+        <option value="$PROJECT_DIR$/src/Controller/User_controller.java" />
+        <option value="$PROJECT_DIR$/src/Model/Exercice.java" />
+        <option value="$PROJECT_DIR$/src/Model/Historique.java" />
+        <option value="$PROJECT_DIR$/src/Model/Lecon.java" />
+        <option value="$PROJECT_DIR$/src/Model/Session.java" />
+        <option value="$PROJECT_DIR$/src/Model/Session_connexion.java" />
+        <option value="$PROJECT_DIR$/src/View/Anonym_langue.java" />
         <option value="$PROJECT_DIR$/src/View/Connexion.java" />
-        <option value="$PROJECT_DIR$/src/View/menu_profil.java" />
         <option value="$PROJECT_DIR$/src/View/form_create_user.java" />
-        <option value="$PROJECT_DIR$/src/View/Mode_view_abstract.java" />
+        <option value="$PROJECT_DIR$/src/View/menu_profil.java" />
         <option value="$PROJECT_DIR$/src/View/Mode_anonym_view.java" />
         <option value="$PROJECT_DIR$/src/View/Mode_confirmed_view.java" />
+        <option value="$PROJECT_DIR$/src/View/Mode_view_abstract.java" />
       </list>
     </option>
   </component>
@@ -407,60 +159,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_Java_save" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_Java_save" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_Java_save" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_Java_save" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_Java_save" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projet_Java_save" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -905,11 +603,13 @@
       <workItem from="1496845131473" duration="6602000" />
       <workItem from="1496904456571" duration="4675000" />
       <workItem from="1497010082925" duration="5116000" />
+      <workItem from="1497109917757" duration="1198000" />
+      <workItem from="1497183609644" duration="3636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80334000" />
+    <option name="totallyTimeSpent" value="85168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -925,14 +625,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -944,6 +643,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -954,7 +654,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -963,13 +663,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Model/Session_connexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Connexion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -1043,13 +736,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/List_User.java" />
     <entry file="file://$PROJECT_DIR$/src/Model/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Model/Genre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Helper/CSVHelpher.java" />
     <entry file="jar://$USER_HOME$/jdk1.8.0_111/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1072,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Type_session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/jdk1.8.0_111/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -1087,62 +766,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Exercice_Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/Model/Conjugaison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Grammaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Orthographe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Vocabulaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/jdk1.8.0_111/src.zip!/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12564">
           <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Historique.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Lecon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Exercice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="108" lean-forward="false" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,152 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Session_connexion_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="68" lean-forward="true" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/User_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#478#479#0" expanded="false" />
-            <element signature="e#520#521#0" expanded="false" />
-            <element signature="e#543#544#0" expanded="false" />
-            <element signature="e#580#581#0" expanded="false" />
-            <element signature="e#609#610#0" expanded="false" />
-            <element signature="e#657#658#0" expanded="false" />
-            <element signature="e#686#687#0" expanded="false" />
-            <element signature="e#719#720#0" expanded="false" />
-            <element signature="e#744#745#0" expanded="false" />
-            <element signature="e#784#785#0" expanded="false" />
-            <element signature="e#805#806#0" expanded="false" />
-            <element signature="e#839#840#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#907#908#0" expanded="false" />
-            <element signature="e#930#931#0" expanded="false" />
-            <element signature="e#1103#1104#0" expanded="false" />
-            <element signature="e#1129#1130#0" expanded="false" />
-            <element signature="e#1341#1342#0" expanded="false" />
-            <element signature="e#1371#1372#0" expanded="false" />
-            <element signature="e#1500#1501#0" expanded="false" />
-            <element signature="e#1528#1529#0" expanded="false" />
-            <element signature="e#1687#1688#0" expanded="false" />
-            <element signature="e#1721#1722#0" expanded="false" />
-            <element signature="e#1850#1851#0" expanded="false" />
-            <element signature="e#1879#1880#0" expanded="false" />
-            <element signature="e#2027#2028#0" expanded="false" />
-            <element signature="e#2063#2064#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#332#333#0" expanded="false" />
-            <element signature="e#378#379#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-            <element signature="e#459#460#0" expanded="false" />
-            <element signature="e#582#583#0" expanded="false" />
-            <element signature="e#609#610#0" expanded="false" />
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#771#772#0" expanded="false" />
-            <element signature="e#945#946#0" expanded="false" />
-            <element signature="e#989#990#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Session_connexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="88" column="39" lean-forward="true" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
-          <folding>
-            <element signature="e#3037#3038#0" expanded="false" />
-            <element signature="e#3099#3100#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Session_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Anonym_langue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Historique_Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-          <folding>
-            <element signature="e#913#914#0" expanded="false" />
-            <element signature="e#957#958#0" expanded="false" />
-            <element signature="method#addSession#0;class#Historique_Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://Flash/">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1377,109 +858,11 @@
           <nodes />
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="696.0" y="300.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="696.0" y="301.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>PRIVATE</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/View">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>View</OriginalElement>
-          <nodes>
-            <node x="635.0" y="1483.0">View.menu_profil</node>
-            <node x="14.5" y="1078.0">View.Anonym_langue</node>
-            <node x="734.4791666666667" y="587.0">View.Mode_confirmed_view</node>
-            <node x="0.0" y="659.0">View.Mode_anonym_view</node>
-            <node x="276.5" y="970.0">View.Connexion</node>
-            <node x="285.63541666666663" y="0.0">View.Mode_view_abstract</node>
-            <node x="718.5" y="934.0">View.form_create_user</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="View.menu_profil" target="View.form_create_user">
-              <point x="13.5" y="-52.0" />
-              <point x="729.5" y="1443.0" />
-              <point x="839.0" y="1443.0" />
-              <point x="-120.5" y="244.5" />
-            </edge>
-            <edge source="View.Mode_confirmed_view" target="View.menu_profil">
-              <point x="130.33333333333326" y="148.5" />
-              <point x="1060.3125" y="909.0" />
-              <point x="1211.0" y="909.0" />
-              <point x="1211.0" y="1463.0" />
-              <point x="783.5" y="1463.0" />
-              <point x="67.49999999999999" y="-52.0" />
-            </edge>
-            <edge source="View.Connexion" target="View.menu_profil">
-              <point x="105.49999999999994" y="208.5" />
-              <point x="593.0" y="1443.0" />
-              <point x="702.5" y="1443.0" />
-              <point x="-13.5" y="-52.0" />
-            </edge>
-            <edge source="View.Anonym_langue" target="View.Mode_anonym_view">
-              <point x="0.0" y="-100.5" />
-              <point x="0.0" y="76.5" />
-            </edge>
-            <edge source="View.menu_profil" target="View.Connexion">
-              <point x="-40.5" y="-52.0" />
-              <point x="675.5" y="1453.0" />
-              <point x="382.0" y="1453.0" />
-              <point x="-105.5" y="208.5" />
-            </edge>
-            <edge source="View.Mode_confirmed_view" target="View.Mode_view_abstract">
-              <point x="0.0" y="-148.5" />
-              <point x="929.9791666666667" y="562.0" />
-              <point x="677.1354166666666" y="562.0" />
-              <point x="130.5" y="268.5" />
-            </edge>
-            <edge source="View.Mode_anonym_view" target="View.Mode_view_abstract">
-              <point x="0.0" y="-76.5" />
-              <point x="135.5" y="562.0" />
-              <point x="416.13541666666663" y="562.0" />
-              <point x="-130.5" y="268.5" />
-            </edge>
-            <edge source="View.Connexion" target="View.Mode_confirmed_view">
-              <point x="-5.6843418860808015E-14" y="-208.5" />
-              <point x="487.49999999999994" y="909.0" />
-              <point x="799.6458333333333" y="909.0" />
-              <point x="-130.33333333333337" y="148.5" />
-            </edge>
-            <edge source="View.form_create_user" target="View.Mode_confirmed_view">
-              <point x="0.0" y="-244.5" />
-              <point x="959.5" y="909.0" />
-              <point x="929.9791666666667" y="909.0" />
-              <point x="0.0" y="148.5" />
-            </edge>
-            <edge source="View.form_create_user" target="View.menu_profil">
-              <point x="120.5" y="244.5" />
-              <point x="1080.0" y="1453.0" />
-              <point x="756.5" y="1453.0" />
-              <point x="40.5" y="-52.0" />
-            </edge>
-            <edge source="View.menu_profil" target="View.Anonym_langue">
-              <point x="-67.5" y="-52.0" />
-              <point x="648.5" y="1463.0" />
-              <point x="135.5" y="1463.0" />
-              <point x="0.0" y="100.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.5749844430616055" x="-172.5974025974026" y="427.4025974025974" />
-          <SelectedNodes>
-            <node>View.menu_profil</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -1496,13 +879,88 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="285.0" y="298.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="285.0" y="299.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
-            <Category>Methods</Category>
             <Category>Properties</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Historique_Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="method#addExoHisto#0;class#Historique_Controller#0" expanded="false" />
+            <element signature="method#ContientDate#0;class#Historique_Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Session_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Session_connexion_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/User_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="103" column="7" lean-forward="true" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Orthographe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/View">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>View</OriginalElement>
+          <nodes>
+            <node x="" y="">View.menu_profil</node>
+            <node x="" y="">View.Anonym_langue</node>
+            <node x="" y="">View.Mode_confirmed_view</node>
+            <node x="" y="">View.Connexion</node>
+            <node x="" y="">View.Mode_anonym_view</node>
+            <node x="" y="">View.Mode_view_abstract</node>
+            <node x="" y="">View.form_create_user</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5749844430616055" x="620.0649350649351" y="532.2202380952381" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1515,126 +973,223 @@
           <ID>JAVA</ID>
           <OriginalElement>Model</OriginalElement>
           <nodes>
-            <node x="1219.5" y="0.0">Model.Type_session</node>
-            <node x="0.0" y="1155.0">Model.Langue</node>
-            <node x="515.0" y="491.0">Model.Orthographe</node>
-            <node x="734.0" y="491.0">Model.Vocabulaire</node>
-            <node x="944.0" y="491.0">Model.Grammaire</node>
-            <node x="63.0" y="430.0">Model.Session</node>
-            <node x="1173.0" y="129.0">Model.Session_connexion</node>
-            <node x="301.0" y="491.0">Model.Conjugaison</node>
-            <node x="72.5" y="657.0">Model.Historique</node>
-            <node x="194.0" y="1155.0">Model.Genre</node>
-            <node x="476.5" y="154.0">Model.Lecon</node>
-            <node x="512.0" y="0.0">Model.Exercice</node>
-            <node x="0.0" y="836.0">Model.User</node>
+            <node x="" y="">Model.Type_session</node>
+            <node x="" y="">Model.Langue</node>
+            <node x="" y="">Model.Orthographe</node>
+            <node x="" y="">Model.Vocabulaire</node>
+            <node x="" y="">Model.Grammaire</node>
+            <node x="" y="">Model.Session_connexion</node>
+            <node x="" y="">Model.Session</node>
+            <node x="" y="">Model.Conjugaison</node>
+            <node x="" y="">Model.Historique</node>
+            <node x="" y="">Model.Genre</node>
+            <node x="" y="">Model.Lecon</node>
+            <node x="" y="">Model.Exercice</node>
+            <node x="" y="">Model.User</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="Model.Vocabulaire" target="Model.Lecon">
-              <point x="0.0" y="-27.5" />
-              <point x="829.0" y="410.0" />
-              <point x="669.7" y="410.0" />
-              <point x="55.200000000000045" y="113.0" />
-            </edge>
-            <edge source="Model.Orthographe" target="Model.Lecon">
-              <point x="0.0" y="-27.5" />
-              <point x="0.0" y="113.0" />
-            </edge>
-            <edge source="Model.Historique" target="Model.Session">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="Model.Lecon" target="Model.Exercice">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="Model.Conjugaison" target="Model.Lecon">
-              <point x="0.0" y="-27.5" />
-              <point x="398.0" y="410.0" />
-              <point x="559.3" y="410.0" />
-              <point x="-55.200000000000045" y="113.0" />
-            </edge>
-            <edge source="Model.Grammaire" target="Model.Lecon">
-              <point x="0.0" y="-27.5" />
-              <point x="1036.0" y="400.0" />
-              <point x="724.9" y="400.0" />
-              <point x="110.39999999999998" y="113.0" />
-            </edge>
-            <edge source="Model.Session_connexion" target="Model.Type_session">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="Model.Session" target="Model.Lecon">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="Model.User" target="Model.Historique">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7096774193548387" x="62.45454545454555" y="328.1818181818182" />
-          <SelectedNodes>
-            <node>Model.Type_session</node>
-          </SelectedNodes>
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7096774193548387" x="704.5454545454545" y="413.25" />
+          <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
             <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Mode_view_abstract.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/Exercice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="511">
+          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Mode_anonym_view.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/Genre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        <state relative-caret-position="108">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Grammaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Historique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Conjugaison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Langue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Lecon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Session_connexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Type_session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Vocabulaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Anonym_langue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="method#generateLecon#0;class#Anonym_langue#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/form_create_user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="137" column="7" lean-forward="false" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+          <folding>
+            <element signature="method#form_create_user#0;class#form_create_user#0" expanded="false" />
+            <element signature="method#generateLecon#0;class#form_create_user#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Connexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="174" column="36" lean-forward="false" selection-start-line="174" selection-start-column="36" selection-end-line="174" selection-end-column="36" />
+        <state relative-caret-position="331">
+          <caret line="159" column="7" lean-forward="true" selection-start-line="157" selection-start-column="4" selection-end-line="159" selection-end-column="7" />
           <folding>
-            <element signature="method#id_mdp_isValid#0;class#Connexion#0" expanded="false" />
+            <element signature="method#Connexion#0;class#Connexion#0" expanded="false" />
             <element signature="method#isRoot#0;class#Connexion#0" expanded="false" />
+            <element signature="method#generateLecon#0;class#Connexion#0" expanded="false" />
+            <element signature="method#getLangueById#0;class#Connexion#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/menu_profil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="method#menu_profil#0;class#menu_profil#0" expanded="false" />
+            <element signature="e#3181#3182#0" expanded="true" />
+            <element signature="e#3243#3244#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Mode_confirmed_view.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        <state relative-caret-position="389">
+          <caret line="150" column="50" lean-forward="false" selection-start-line="150" selection-start-column="50" selection-end-line="150" selection-end-column="50" />
           <folding>
             <element signature="method#Mode_confirmed_view#0;class#Mode_confirmed_view#0" expanded="false" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
             <element signature="method#Init_pn_menu#0;class#Mode_confirmed_view#0" expanded="false" />
             <element signature="method#recup_profil_user#0;class#Mode_confirmed_view#0" expanded="false" />
             <element signature="method#getLangueById#0;class#Mode_confirmed_view#0" expanded="false" />
             <element signature="method#affichMonCompte#0;class#Mode_confirmed_view#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Mode_anonym_view.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="82" column="7" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="82" selection-end-column="7" />
+          <folding>
+            <element signature="method#Mode_anonym_view#0;class#Mode_anonym_view#0" expanded="false" />
+            <element signature="method#Init_pn_menu#0;class#Mode_anonym_view#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Mode_view_abstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="183" column="56" lean-forward="false" selection-start-line="183" selection-start-column="56" selection-end-line="183" selection-end-column="56" />
+          <folding>
+            <element signature="method#Mode_view_abstract#0;class#Mode_view_abstract#0" expanded="false" />
+            <element signature="method#Init_pn_contenu#0;class#Mode_view_abstract#0" expanded="false" />
+            <element signature="method#AfficheHistorique#0;class#Mode_view_abstract#0" expanded="false" />
+            <element signature="method#AfficheListeExo#0;class#Mode_view_abstract#0" expanded="false" />
+            <element signature="method#AfficheExo#0;class#Mode_view_abstract#0" expanded="false" />
+            <element signature="method#LeconBTN_Step1_Contenu#0;class#Mode_view_abstract#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="68" lean-forward="true" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>

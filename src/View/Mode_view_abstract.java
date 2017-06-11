@@ -14,6 +14,7 @@ import java.util.Vector;
 
 /**
  * Created by thibaut on 04/06/17.
+ * Instance de vue dont héritent les deux vues selon le type de session (enregistré ou anonyme)
  */
 public abstract class Mode_view_abstract extends JFrame {
     protected Toolkit kit = Toolkit . getDefaultToolkit ();
@@ -31,6 +32,9 @@ public abstract class Mode_view_abstract extends JFrame {
     protected JLabel lb_contenu = new JLabel("",JLabel.CENTER);
     protected JLabel lb_titre = new JLabel("Accueil",JLabel.CENTER);
 
+    /**
+     * Constructeur de l'instance
+     */
     public Mode_view_abstract() {
         cb_lecon.addItem("");
         cb_lecon.addItem("Conjugaison");
@@ -42,6 +46,9 @@ public abstract class Mode_view_abstract extends JFrame {
 
     protected void Init_pn_menu() {}
 
+    /**
+     * Méthode générant l'affichage de base de la vue
+     */
     protected void Init_pn_contenu()
     {
         AfficheHistorique();
@@ -58,6 +65,9 @@ public abstract class Mode_view_abstract extends JFrame {
         pn_contenu.add(pn_center, BorderLayout.CENTER);
     }
 
+    /**
+     * Méthode affichant l'historique
+     */
     private void AfficheHistorique()
     {
         pn_center.removeAll();
@@ -87,6 +97,10 @@ public abstract class Mode_view_abstract extends JFrame {
 
     }
 
+    /**
+     * Méthode affichant la liste d'exercices disponibles
+     * @param type_lecon
+     */
     protected void AfficheListeExo(String type_lecon)
     {
         if(!type_lecon.equals("")) {
@@ -130,6 +144,10 @@ public abstract class Mode_view_abstract extends JFrame {
         }
     }
 
+    /**
+     * Méthode affichant le contenu de l'exercice et qui l'ajoute à l'historique de l'utilisateur
+     * @param type_lecon,exo
+     */
     protected void AfficheExo(String type_lecon,String exo)
     {
         int i = 0;
@@ -162,6 +180,9 @@ public abstract class Mode_view_abstract extends JFrame {
         }
     }
 
+    /**
+     * Méthode appelé en cas de clic sur le bouton lecon
+     */
     protected void LeconBTN_Step1_Contenu()
     {
 

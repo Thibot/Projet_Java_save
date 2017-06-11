@@ -29,7 +29,7 @@ public class Anonym_langue extends JFrame {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         dispose();
-                        generateLecon(cb_langue.getSelectedItem().toString());
+                        generateLecon();
                         Mode_view_abstract anonym_view = new Mode_anonym_view(list_lecon,cb_langue.getSelectedItem().toString());
 
                     }
@@ -49,7 +49,10 @@ public class Anonym_langue extends JFrame {
         setVisible (true);
     }
 
-    private void generateLecon(String langue)   //Evolution : rechercher une liste de lecons correspondante à la langue sélectionnée
+    /**
+     * Méthode générant la liste de lecon qui, avec une base de données, serait récupérée par un requette
+     */
+    private void generateLecon()   //Evolution : rechercher une liste de lecons
     {
         Conjugaison conjugaison = new Conjugaison(cb_langue.getSelectedItem().toString());
         conjugaison.addExercice(new Exercice("Exercice Conjugaison 1"));
