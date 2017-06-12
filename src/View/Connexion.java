@@ -28,6 +28,7 @@ public class Connexion extends JFrame {
     private JLabel lb_mdp = new JLabel("Mot de passe : ");
     private JPasswordField pf_mdp = new JPasswordField("",10);
     private JButton btn_connexion = new JButton("Connexion");
+    private int nb_essais=3;
 
     /**
      * Constructeur de la vue de connexion
@@ -104,9 +105,16 @@ public class Connexion extends JFrame {
                             Mode_view_abstract next_view = new Mode_confirmed_view(session_controller, liste_utilisateur,histo,list_lecon);
 
                         } else {
-                            JOptionPane.showMessageDialog(null, "Aucun utilisateur avec ces identifiants","Erreur authentification",JOptionPane.ERROR_MESSAGE);
+                            nb_essais--;
+                            if(nb_essais==0)
+                            {
+                                dispose();
+                                menu_profil f = new menu_profil(liste_utilisateur,histo);
+                            }else
+                            {
+                                JOptionPane.showMessageDialog(null, "Aucun utilisateur avec ces identifiants. Encore "+nb_essais+" essais disponibles","Erreur authentification",JOptionPane.ERROR_MESSAGE);
+                            }
                         }
-
                     }
                 }
         );

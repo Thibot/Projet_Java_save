@@ -32,6 +32,7 @@ public class menu_profil extends JFrame {
         JButton btn_connexion = new JButton("Se connecter");
         JButton btn_create = new JButton("Créer un compte");
         JButton btn_anonyme=new JButton("Anonyme");
+        JButton btn_list_user=new JButton("Liste des utilisateurs");
         JButton btn_quitter = new JButton("Quitter");
         GridBagConstraints gbc = new GridBagConstraints();
         setLayout(new GridBagLayout());
@@ -50,10 +51,12 @@ public class menu_profil extends JFrame {
         getContentPane().add(btn_create,gbc);
         gbc.gridx=0;
         gbc.gridy=3;
-        gbc.insets = new Insets(5, 80, 5, 80);
         getContentPane().add(btn_anonyme,gbc);
         gbc.gridx=0;
         gbc.gridy=4;
+        getContentPane().add(btn_list_user,gbc);
+        gbc.gridx=0;
+        gbc.gridy=5;
         gbc.gridheight=GridBagConstraints.REMAINDER;
         gbc.insets = new Insets(5, 80, 10, 80);
         getContentPane().add(btn_quitter,gbc);
@@ -82,6 +85,15 @@ public class menu_profil extends JFrame {
                     public void actionPerformed(ActionEvent e) {
                         dispose();
                         Anonym_langue anonyme_step1 = new Anonym_langue();
+                    }
+                }
+        );
+
+        btn_list_user.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        ListUser_View affiche_liste=new ListUser_View(liste_utilisateur);
                     }
                 }
         );
